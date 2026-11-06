@@ -21,7 +21,10 @@ Dos usos separados:
 - **Muse Spark 1.3 dentro del producto:** coordinar herramientas, revisar secuencias ambiguas, generar explicaciones tácticas.
 - Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Comparar Muse directo vs sistema combinado en Fase 1.
 
-Pendiente de comprobar antes de integrar: acceso real de la cuenta, límites de vídeo, costes y comportamiento de la API.
+Pendiente de comprobar antes de integrar, en **dos bloques separados** (matización del usuario 2026-11-06):
+- **Bloque A — acceso técnico:** cuenta, límites y comportamiento de la API.
+- **Bloque B — viabilidad:** precisión, tiempo y coste sobre nuestros vídeos.
+Tener acceso no demuestra que el análisis sea suficientemente bueno. Ver `docs/ACCEPTANCE_CRITERIA.md`.
 
 ## Pipeline interno (etapas verificables)
 Recepción → Preparación → Segmentación (planos, cortes, repeticiones) → Percepción → Seguimiento → Calibración → Eventos → Revisión con Muse → Validación → Publicación. Cada etapa guarda su resultado; un fallo recuperable no obliga a repetir todo.
@@ -30,7 +33,7 @@ Recepción → Preparación → Segmentación (planos, cortes, repeticiones) →
 - ID de seguimiento ≠ dorsal o nombre automáticamente.
 - Jugador fuera de cámara = posición desconocida hasta recuperarlo con evidencia.
 - Asociaciones dudosas corregibles.
-- En primeros planos o repeticiones se suspenden métricas que dependan de vista válida del campo.
+- En primeros planos o repeticiones se suspenden las métricas que dependan de vista válida del campo. Matización (2026-11-06): se suspenden las métricas que requieren **geometría válida del campo**. Una repetición puede ayudar a revisar una acción, pero **no contabilizarse como otra jugada**; la corrección se anota sobre el evento original en directo.
 - Distancias/velocidades solo sobre tramos calibrados y trayectorias estables.
 - Distancia observada ≠ distancia total del partido.
 - Heatmaps muestran también tiempo visible.
@@ -57,5 +60,7 @@ Especificación, inventario de funciones, diccionario de eventos, contratos de d
 ## Estado
 2026-11-06: especificación recibida y guardada. Sin código, sin repo, sin objetivo creado. Pendiente: elegir primer paso (Fase 0 o Fase 1).
 
+**Fase 0 cerrada 2026-11-06** con cuatro entregables: (1) definiciones exactas de los eventos v1 — `docs/EVENT_DICTIONARY.md`; (2) contrato de datos de cada jugada y su evidencia — `docs/DATA_CONTRACT.md`; (3) clips de evaluación con anotaciones humanas — `docs/EVALUATION_SET.md` + `docs/evaluation/annotation-template.json` (especificación y plantillas; los clips reales están pendientes de aportar por el usuario); (4) criterios medibles para decidir si la prueba con Muse permite avanzar — `docs/ACCEPTANCE_CRITERIA.md` (umbrales propuestos en Fase 0, fijados antes de ajustar modelos). Siguiente paso: comparación Muse directo frente a Muse con herramientas de visión, antes de construir el dashboard completo. Sin implementación iniciada.
+
 ## Despliegue (2026-11-06)
-Monorepo, todo en el servidor Oracle (decisión del usuario; sin Vercel para este proyecto). Repo: https://github.com/jpecinagithub/soccer-forge-studio. Detalle completo, paso a paso, en [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md): servidor `iadelveloper-server` (143.47.63.169, Node 20.20.2, Docker 29.5.0, ffmpeg 6.1.1, 122 G libres, sin GPU detectada), URL propuesta `https://jpecina.duckdns.org/soccer/`, puertos web 4310 / api 4300 (solo localhost, vía nginx), Postgres 16 + Redis 7 internos, volúmenes `soccer_pgdata` / `soccer_redisdata` / `soccer_media`, `restart: unless-stopped` en todos los servicios. Despliegue documentado, NO ejecutado todavía.
+Monorepo, todo en el servidor Oracle (decisión del usuario; sin Vercel para este proyecto). Repo: https://github.com/jpecinagithub/soccer-forge-studio. Detalle completo, paso a paso, en [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md): servidor `iadelveloper-server` (143.47.63.169, Node 20.20.2, Docker 29.5.0, ffmpeg 6.1.1, 122 G libres, sin GPU detectada), URL propuesta `https://jpecina.duckdns.org/soccer/`, puertos web 4310 / api 4300 (solo localhost, vía nginx), Postgres 16 + Redis 7 internos, volúmenes `soccer_pgdata` / `soccer_redisdata` / `soccer_media`, `restart: unless-stopped` en todos los servicios. Despliegue documentado, NO ejecutado todavía. **Cautela GPU (2026-11-06):** «sin GPU detectada» es información documentada, todavía no verificada — la comprobación fue que `nvidia-smi` no existe en el host, lo que no prueba la ausencia de hardware. Condiciona dónde ejecutar la visión especializada y debe resolverse en la prueba de viabilidad.

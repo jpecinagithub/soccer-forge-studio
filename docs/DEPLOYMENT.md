@@ -19,7 +19,7 @@
 | Docker | 29.5.0 |
 | ffmpeg | 6.1.1 (instalado en el host) |
 | Python | 3.12.3 |
-| GPU | **No detectada** (`nvidia-smi` no existe en el host). El pipeline se planifica para CPU hasta que se demuestre lo contrario; la Fase 1 debe medir tiempo/coste por minuto en CPU |
+| GPU | **No detectada** (`nvidia-smi` no existe en el host). El pipeline se planifica para CPU hasta que se demuestre lo contrario; la Fase 1 debe medir tiempo/coste por minuto en CPU. **Cautela (2026-11-06):** es información documentada, todavía no verificada — la ausencia de `nvidia-smi` no prueba que no haya hardware GPU. Debe resolverse en la prueba de viabilidad (p. ej. `lspci`, inventario del host) antes de decidir dónde ejecutar la visión especializada |
 | nginx | `/etc/nginx/sites-enabled/mi-gps` — rutas existentes `/gameforge/`, `/appforge/`, `/nexus/`, `/spark/` |
 
 Patrón que se sigue: el de GameForge — checkout en `/home/ubuntu/<proyecto>`, compose en `infra/deploy/docker-compose.yml`, proyecto compose `gameforge` → aquí `soccer-forge`. AppForge usa el mismo patrón (`/home/ubuntu/appforge`, API en `127.0.0.1:3201`).

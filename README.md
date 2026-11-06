@@ -2,7 +2,7 @@
 
 Análisis de vídeo de fútbol con agente **Muse Spark 1.3** (`muse-spark-1.3`) + herramientas especializadas de visión + dashboard conectado a evidencias del vídeo.
 
-> Estado: **Fase 0 — Especificación**. Este repo documenta el producto y su despliegue. No hay todavía implementación del pipeline ni despliegue en producción. Nada de lo documentado aquí debe leerse como verificado en vivo hasta que la Fase 1 lo mida.
+> Estado: **Fase 0 cerrada (2026-11-06)**. Este repo documenta el producto y su despliegue. No hay todavía implementación del pipeline ni despliegue en producción. Nada de lo documentado aquí debe leerse como verificado en vivo hasta que la Fase 1 lo mida. Los cuatro entregables de Fase 0 están en `docs/`: definiciones exactas de eventos, contrato de datos, set de evaluación y criterios de aceptación.
 
 ## Flujo del usuario
 
@@ -40,9 +40,12 @@ Todo el despliegue vive en el servidor Oracle (sin Vercel para este proyecto, po
 ## Documentación
 
 - [SPEC.md](SPEC.md) — especificación inicial completa (resumen de la propuesta del 2026-11-06).
+- [docs/EVENT_DICTIONARY.md](docs/EVENT_DICTIONARY.md) — definiciones exactas de los eventos v1 (Fase 0).
+- [docs/DATA_CONTRACT.md](docs/DATA_CONTRACT.md) — contrato de datos de cada jugada y su evidencia (Fase 0).
+- [docs/EVALUATION_SET.md](docs/EVALUATION_SET.md) — clips de evaluación con anotaciones humanas (Fase 0; clips pendientes de aportar).
+- [docs/ACCEPTANCE_CRITERIA.md](docs/ACCEPTANCE_CRITERIA.md) — criterios medibles Go / No-Go de la Fase 1 (Fase 0).
 - [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — despliegue monorepo en Oracle, paso a paso.
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — arquitectura, pipeline y contratos de datos.
-- [docs/EVENT_DICTIONARY.md](docs/EVENT_DICTIONARY.md) — diccionario de eventos v1.
 
 ## Fases
 
