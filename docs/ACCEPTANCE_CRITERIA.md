@@ -39,13 +39,13 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 | Incertidumbre calibrada | ≥ 60 % de los errores estaban marcados `pending` o con confianza < 0,60 | idem | errores revisados a mano |
 | Esfuerzo de corrección | ≤ 20 min de analista por 10 min de vídeo | ≤ 30 min | tiempo medido |
 | Tiempo de proceso (CPU, sin GPU) | ≤ 3× tiempo real (p50) | ≤ 3× tiempo real (p50) | 10 min procesados en ≤ 30 min |
-| Coste por minuto | ≤ presupuesto fijado por el usuario antes de la Fase 1 | idem | €/min medidos; **sin presupuesto fijado no hay GO** |
+| Coste por minuto | Se mide y se informa; no es criterio de corte | idem | €/min medidos. Decisión del usuario 2026-11-06: el presupuesto no es una restricción (proyecto educativo) |
 
 ### B2. Comparación Muse directo vs Muse con herramientas de visión
 
 - **Mismo material:** los clips reservados; **misma anotación:** la referencia humana; **misma puntuación:** la tabla B1.
 - **Regla de decisión:** el sistema combinado (Muse + herramientas) debe superar a Muse directo en **F1 de pases ≥ +0,05 o error mediano de jugada ≥ −20 %**. Si no lo supera, se elige la opción más simple o se rediseña; no se construye el sistema complejo por inercia.
-- **Coste:** la comparación incluye tiempo y coste por minuto de cada opción. Una mejora pequeña con un coste mucho mayor es NO-GO para esa opción.
+- **Coste:** la comparación incluye tiempo y coste por minuto de cada opción, solo como información. El coste no bloquea la decisión (proyecto educativo, decisión del usuario 2026-11-06).
 
 ## C. Decisión
 
@@ -53,7 +53,7 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 |---|---|
 | A pasa entero y B cumple todos los umbrales | **GO** a Fase 2 (ingesta) con el diseño medido |
 | A pasa, B falla en 1–2 métricas no críticas (no evidencia, no correcciones, no tiempo) | **CONDICIONAL**: se documenta el fallo, se fija un plan de corrección y se repite la medición; sin repetición no hay GO |
-| A falla, o B falla en evidencia, correcciones, tiempo o coste | **NO-GO**: no se construye el dashboard completo; se rediseña o se cambia de proveedor |
+| A falla, o B falla en evidencia, correcciones o tiempo | **NO-GO**: no se construye el dashboard completo; se rediseña o se cambia de proveedor |
 | B no se puede medir (sin clips, sin anotaciones) | **SIN MEDICIÓN**: no hay decisión; el paso previo es cerrar `EVALUATION_SET.md` |
 
 ## D. Registro de la decisión
