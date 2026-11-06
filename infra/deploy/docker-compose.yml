@@ -1,0 +1,94 @@
+# Soccer Forge Studio — despliegue Oracle (Fase 0: esqueleto documentado, sin implementar)
+# Proyecto compose: soccer-forge. Checkout en el servidor: ~/soccer-forge-studio
+# Ver docs/DEPLOYMENT.md. Todos los servicios llevan restart: unless-stopped.
+# Puertos 4300/4310 verificados libres el 2026-11-06; postgres/redis solo en red interna.
+
+name: soccer-forge
+
+services:
+  web:
+    build:
+      context: ../..
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "127.0.0.1:4310:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ../..
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "127.0.0.1:4300:4300"
+    env_file:
+      - ../../.env
+    environment:
+      - NODE_ENV=production
+      - PORT=4300
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
+      - STORAGE_PATH=${STORAGE_PATH:-/data/media}
+    volumes:
+      - soccer_media:/data/media
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: ../..
+      dockerfile: apps/worker/Dockerfile
+    env_file:
+      - ../../.env
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
+      - STORAGE_PATH=${STORAGE_PATH:-/data/media}
+      - MUSE_SPARK_API_KEY=${MUSE_SPARK_API_KEY:-}
+      - MUSE_SPARK_MODEL=${MUSE_SPARK_MODEL:-muse-spark-1.3}
+      - MUSE_SPARK_BASE_URL=${MUSE_SPARK_BASE_URL:-}
+    volumes:
+      - soccer_media:/data/media
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=soccer
+      - POSTGRES_USER=soccer
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - soccer_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soccer -d soccer"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - soccer_redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  soccer_pgdata:
+  soccer_redisdata:
+  soccer_media:
