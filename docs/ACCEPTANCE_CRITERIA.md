@@ -25,15 +25,21 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 
 ### B1. Umbrales propuestos (Fase 0)
 
+> **Cambios de criterio registrados antes del ensayo (2026-11-06, tras la revisión de B1):**
+>
+> 1. **Fórmula de F1 (corregida):** la versión anterior decía «aciertos / (omisiones + falsos positivos)», que no es F1. La fórmula correcta es **F1 = 2TP / (2TP + FP + FN)**, con emparejamiento uno a uno. Un evento detectado es TP solo si coincide en tipo y participantes y `|ΔtStart|` está dentro de la tolerancia; en caso contrario es FP, y cada evento anotado sin pareja es FN.
+> 2. **Tiempo analizable (redefinido para resúmenes editados):** el umbral ≥ 70 % (TV) no se aplica sobre la duración total del clip, porque en un resumen editado gran parte del tiempo son primeros planos y repeticiones. Se separan dos medidas: **cobertura de observación del clip** = tiempo `field-view` / duración total (B1 v2: 131,00 s / 237,24 s ≈ 55,2 %, se informa y no se exige); **tiempo analizable** = tiempo `field-view` procesado con éxito / tiempo `field-view` total, y el umbral ≥ 70 % se aplica a esta segunda medida. La vista de campo no acredita por sí sola la calibración geométrica: la calibración se verifica aparte, solo en tramos con geometría válida.
+> 3. **Ámbito de puntuación:** los umbrales de F1 se miden solo sobre los eventos y ventanas que la anotación marca como puntuables en su campo `scoring` (`scoredEvents`); los casos pendientes (`pendingNotScored`) no cuentan como TP, FP ni FN hasta su adjudicación. No se calcula F1 global de una clase (pases, pérdidas, recuperaciones) sobre un clip cuya anotación de esa clase es parcial.
+
 | Métrica | Cámara táctica | TV / amateur | Cómo se mide |
 |---|---|---|---|
-| F1 de pases | ≥ 0,70 | ≥ 0,55 | aciertos / (omisiones + falsos positivos) por tipo |
+| F1 de pases | ≥ 0,70 | ≥ 0,55 | F1 = 2TP / (2TP + FP + FN), con emparejamiento uno a uno entre eventos detectados y anotados (mismo tipo y participantes, \|ΔtStart\| dentro de la tolerancia); si la referencia marca `unknownPlayers`, la identidad no se penaliza (solo tipo y tiempo) |
 | F1 de tiros | ≥ 0,70 | ≥ 0,55 | idem |
 | F1 de recuperaciones + pérdidas | ≥ 0,60 | ≥ 0,45 | idem |
 | Error mediano en inicio/fin de jugada | ≤ 1,0 s | ≤ 2,0 s | mediana de \|Δt\| |
 | Cambios indebidos de identidad | ≤ 2 por 10 min | ≤ 4 por 10 min | conteo manual sobre trayectorias |
 | Error mediano de posición (donde hay referencia válida) | ≤ 1,5 m | ≤ 3,0 m | solo tramos `field-view` calibrados |
-| Tiempo analizable | ≥ 85 % | ≥ 70 % | `analyzableSec / totalSec` |
+| Tiempo analizable | ≥ 85 % | ≥ 70 % | ver nota de cambio 2026-11-06 bajo la tabla: se mide sobre el material elegible, no sobre la duración total del clip |
 | Jugadas con evidencia que abre | 100 % | 100 % | clic en cada jugada del informe |
 | Correcciones que persisten tras recargar | 100 % | 100 % | corrección → recarga → comprobación |
 | Incertidumbre calibrada | ≥ 60 % de los errores estaban marcados `pending` o con confianza < 0,60 | idem | errores revisados a mano |

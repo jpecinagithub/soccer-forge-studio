@@ -1,6 +1,6 @@
 # Set de evaluación — clips y anotaciones humanas (Fase 0, 2026-11-06)
 
-> Estado 2026-11-06: **piloto con 1 clip recibido y verificado** (B1, Georgia 0-4 España, 237,24 s, SHA256 comprobado). **Anotación humana: primer pase hecho 2026-11-06** (`docs/evaluation/B1-georgia-espana-annotation.json`, 9 jugadas, 4 goles, 5 jugadas marcadas como dudosas), **pendiente de revisión por el usuario** (el protocolo pide que una segunda persona revise al menos el 20 % de las jugadas). El resto del set sigue pendiente. No se evalúa sobre material usado para ajustar el sistema.
+> Estado 2026-11-06: **piloto con 1 clip recibido y verificado** (B1, Georgia 0-4 España, 237,24 s, SHA256 comprobado). **Anotación humana: primer pase hecho 2026-11-06 y corregido a v2 el mismo día** (`docs/evaluation/B1-georgia-espana-annotation.json`, 8 jugadas, 11 eventos, 5 puntuables, 4 goles), tras revisión por IA del 33 % de las jugadas + 2 tramos (`docs/evaluation/REVISION-B1.md`). **Adjudicación humana pendiente**: esta referencia NO es una anotación humana validada. El resto del set sigue pendiente. No se evalúa sobre material usado para ajustar el sistema.
 
 ## 1. Composición mínima
 
@@ -55,7 +55,7 @@ Los tres resúmenes RFEF están identificados (fuente: `data/clips/FUENTES.md`, 
 |---|---|---|---|---|---|---|
 | A1 | A | — | — | — | ajuste | pendiente |
 | A2 | A | — | — | — | reservado | pendiente |
-| B1 | B | Georgia 0-4 España | 237,24 s | RFEF | ajuste (piloto) | **recibido y verificado 2026-11-06** (SHA256 `6e7d037e…`, MP4 587.042.519 bytes); **anotación primer pase hecha** (`docs/evaluation/B1-georgia-espana-annotation.json`, 9 jugadas, 4 goles), revisión pendiente |
+| B1 | B | Georgia 0-4 España | 237,24 s | RFEF | ajuste (piloto) | **recibido y verificado 2026-11-06** (SHA256 `6e7d037e…`, MP4 587.042.519 bytes); **anotación v2** (`docs/evaluation/B1-georgia-espana-annotation.json`, 8 jugadas, 11 eventos, 5 puntuables), adjudicación humana pendiente |
 | B2 | B | España 2-0 Georgia | 130,64 s | RFEF | reservado | identificado, pendiente de recibir |
 | B3 | B | España 4-0 Bulgaria | 146,72 s | RFEF | ajuste | identificado, pendiente de recibir |
 | C1 | C | — | — | — | ajuste | pendiente |
@@ -65,6 +65,6 @@ Nota: `espana-georgia-2025.info.json` corresponde a un intento fallido de RTVE, 
 
 ## 6. Qué hace falta para cerrar este entregable
 
-- Recibido B1 (piloto) y anotado en primer pase 2026-11-06 (9 jugadas, 4 goles; revisión del usuario pendiente). Pendientes: B2, B3 (identificados, en RFEF) y los grupos A (táctica) y C (amateur), aún sin fuente.
+- Recibido B1 (piloto) y anotado en v2 el 2026-11-06 (8 jugadas, 11 eventos, 5 puntuables; revisión por IA del 33 % + 2 tramos en `docs/evaluation/REVISION-B1.md`; adjudicación humana pendiente). Pendientes: completar la anotación exhaustiva de las ventanas puntuadas antes del ensayo del bloque B; B2, B3 (identificados, en RFEF) y los grupos A (táctica) y C (amateur), aún sin fuente.
 - Los vídeos se conservan fuera del repo, en el servidor Oracle cuando se despliegue (o en `data/clips/` local hasta entonces).
 - Solo se usan vídeos propios o con permiso para este uso. La disponibilidad pública de los resúmenes RFEF no acredita una licencia de redistribución: no se publican en GitHub ni se envían a Meta.
