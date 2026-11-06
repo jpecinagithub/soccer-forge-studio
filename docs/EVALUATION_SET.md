@@ -1,6 +1,6 @@
 # Set de evaluación — clips y anotaciones humanas (Fase 0, 2026-11-06)
 
-> Estado: **especificación y plantillas listas; clips pendientes**. Este documento define qué clips hacen falta y cómo se anotan. Los clips reales aún no están recogidos: hacen falta vídeos del usuario (o con su permiso) antes de ejecutar la Fase 1. No se evalúa sobre material usado para ajustar el sistema.
+> Estado 2026-11-06: **piloto con 1 clip recibido y verificado** (B1, Georgia 0-4 España, 237,24 s, SHA256 comprobado). El resto del set sigue pendiente. Este documento define qué clips hacen falta y cómo se anotan. No se evalúa sobre material usado para ajustar el sistema.
 
 ## 1. Composición mínima
 
@@ -12,6 +12,8 @@
 | **Total** | | **6** | | **~20 min** |
 
 Requisitos por clip: un solo partido, sin cortes de edición entre jugadas (los cortes de realización televisiva sí forman parte del material y se anotan como segmentos), audio irrelevante, formato de los admitidos en v1 (MP4, MOV, MKV, AVI, WebM).
+
+**Piloto:** la Fase 1 empieza con un solo clip (B1) para validar el procedimiento de medición antes de ampliar el set. Los umbrales de `ACCEPTANCE_CRITERIA.md` se aplican igual; la cobertura de escenarios del piloto es parcial y se anota como tal.
 
 ## 2. Matriz de cobertura (cada escenario, al menos en un clip)
 
@@ -27,6 +29,8 @@ Requisitos por clip: un solo partido, sin cortes de edición entre jugadas (los 
 - [ ] Pérdida en salida de balón
 
 Si un escenario no aparece en los clips disponibles, se anota como **no cubierto**; no se simula ni se inventa.
+
+**Cobertura del piloto (B1):** el clip es un resumen televisivo editado: incluye primeros planos (p. ej. revisión VAR) y posibles repeticiones, pero no es juego continuo. Los escenarios que no aparezcan quedan como no cubiertos en el informe del piloto.
 
 ## 3. División: ajuste vs evaluación
 
@@ -45,19 +49,22 @@ Si un escenario no aparece en los clips disponibles, se anota como **no cubierto
 
 ## 5. Inventario de clips
 
+Los tres resúmenes RFEF están identificados (fuente: `data/clips/FUENTES.md`, descargados de rfef.es el 2026-11-06; H.264 1920×1080, AAC). Solo B1 está recibido y verificado. Los vídeos nunca van a Git (`data/` está ignorado); la procedencia se conserva en `data/clips/`.
+
 | ID | Grupo | Partido / fecha | Duración | Fuente | Uso | Estado |
 |---|---|---|---|---|---|---|
 | A1 | A | — | — | — | ajuste | pendiente |
 | A2 | A | — | — | — | reservado | pendiente |
-| B1 | B | — | — | — | ajuste | pendiente |
-| B2 | B | — | — | — | reservado | pendiente |
+| B1 | B | Georgia 0-4 España | 237,24 s | RFEF | ajuste (piloto) | **recibido y verificado 2026-11-06** (SHA256 `6e7d037e…`, MP4 587.042.519 bytes) |
+| B2 | B | España 2-0 Georgia | 130,64 s | RFEF | reservado | identificado, pendiente de recibir |
+| B3 | B | España 4-0 Bulgaria | 146,72 s | RFEF | ajuste | identificado, pendiente de recibir |
 | C1 | C | — | — | — | ajuste | pendiente |
 | C2 | C | — | — | — | ajuste | pendiente |
 
-Se rellena cuando el usuario aporte los vídeos. Solo se usan vídeos propios o con permiso para este uso.
+Nota: `espana-georgia-2025.info.json` corresponde a un intento fallido de RTVE, no a un clip descargado.
 
-## 6. Qué hace falta del usuario para cerrar este entregable
+## 6. Qué hace falta para cerrar este entregable
 
-- Los 6 clips (o indicación de dónde están) con permiso de uso para evaluación interna.
-- Confirmación de que pueden conservarse en el servidor Oracle, fuera del repo (los vídeos nunca van a Git).
-- Si algún clip no puede compartirse, se sustituye por otro que cubra los mismos escenarios y se anota el cambio.
+- Recibido B1 (piloto). Pendientes: B2, B3 (identificados, en RFEF) y los grupos A (táctica) y C (amateur), aún sin fuente.
+- Los vídeos se conservan fuera del repo, en el servidor Oracle cuando se despliegue (o en `data/clips/` local hasta entonces).
+- Solo se usan vídeos propios o con permiso para este uso. La disponibilidad pública de los resúmenes RFEF no acredita una licencia de redistribución: no se publican en GitHub ni se envían a Meta.
