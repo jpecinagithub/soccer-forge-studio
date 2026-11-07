@@ -1,0 +1,290 @@
+clip,t_abs,segment,status,x,y,unc,source,note
+B1,70.0,s1,V,288,730,15,1c,sheet-verified at full resolution (exp2); 
+B1,70.2,s1,V,338,702,15,1c,sheet-verified at full resolution (exp2); 
+B1,70.4,s1,V,284,662,10,1c,sheet-verified at full resolution (exp2); 
+B1,70.6,s1,V,265,655,15,1c,sheet-verified at full resolution (exp2); 
+B1,70.8,s1,O,,,,1c-O,confirmed O at full resolution (exp2)
+B1,71.0,s1,V,215,519,10,1c,sheet-verified at full resolution (exp2); 
+B1,71.2,s1,V,230,543,10,1c,sheet-verified at full resolution (exp2); 
+B1,71.4,s1,V,228,531,10,1c,sheet-verified at full resolution (exp2); 
+B1,71.6,s1,V,232,522,10,1c,sheet-verified at full resolution (exp2); 
+B1,71.8,s1,V,236,531,10,1c,sheet-verified at full resolution (exp2); 
+B1,72.0,s1,V,275,522,10,1c,sheet-verified at full resolution (exp2); 
+B1,72.2,s1,V,267,512,10,1c,sheet-verified at full resolution (exp2); 
+B1,72.4,s1,V,265,524,10,1c,sheet-verified at full resolution (exp2); 
+B1,72.6,s1,V,275,522,10,1c,sheet-verified at full resolution (exp2); 
+B1,72.8,s1,V,273,524,10,1c,sheet-verified at full resolution (exp2); 
+B1,73.0,s1,V,300,531,10,1c,sheet-verified at full resolution (exp2); 
+B1,73.2,s1,V,321,531,10,1c,sheet-verified at full resolution (exp2); 
+B1,73.4,s1,V,324,536,10,1c,sheet-verified at full resolution (exp2); 
+B1,73.6,s1,V,311,524,10,1c,sheet-verified at full resolution (exp2); 
+B1,73.8,s1,V,396,515,15,1c,sheet-verified at full resolution (exp2); 
+B1,74.0,s1,V,428,508,10,1c,"sheet-verified at full resolution (exp2); TP 1B (386,511)@0.39 a 42 px: balon en (428,508)"
+B1,74.2,s1,V,440,460,15,1c,"sheet-verified at full resolution (exp2); corregido a plena resolucion (440,460); grounding (374,498) caia 76 px a la izquierda, sobre el pie del jugador"
+B1,74.4,s1,V,450,500,10,1c,"sheet-verified at full resolution (exp2); corregido a plena resolucion (450,500); grounding (499,482) a 52 px"
+B1,74.6,s1,V,520,466,10,1c,sheet-verified at full resolution (exp2); 
+B1,74.8,s1,V,449,470,10,1c,sheet-verified at full resolution (exp2); 
+B1,75.0,s1,V,442,468,15,1c,sheet-verified at full resolution (exp2); 
+B1,75.2,s1,V,371,482,15,1c,sheet-verified at full resolution (exp2); 
+B1,75.4,s1,V,369,470,15,1c,sheet-verified at full resolution (exp2); 
+B1,75.6,s1,V,493,450,10,exp2-corrected,"zoom: ball at kicker foot, 23px left of 1C"
+B1,75.8,s1,V,502,481,10,exp2-corrected,"zoom: ball at yellow foot, 70px left of 1C"
+B1,76.0,s1,V,674,491,15,1c,sheet-verified at full resolution (exp2); 
+B1,76.2,s1,V,753,517,15,1c,sheet-verified at full resolution (exp2); 
+B1,76.4,s1,V,826,531,15,1c,"sheet-verified at full resolution (exp2); TP 1B (795,538)@0.68 a 32 px: balon en (826,531)"
+B1,76.6,s1,V,818,578,15,1c,sheet-verified at full resolution (exp2); 
+B1,76.8,s1,V,891,580,15,1c,sheet-verified at full resolution (exp2); 
+B1,77.0,s1,V,958,580,15,1c,sheet-verified at full resolution (exp2); 
+B1,77.2,s1,V,1014,580,15,1c,"sheet-verified at full resolution (exp2); TP 1B (982,584)@0.54 a 32 px: balon en (1014,580)"
+B1,77.4,s1,V,1069,587,15,1c,sheet-verified at full resolution (exp2); 
+B1,77.6,s1,V,1096,599,15,1c,sheet-verified at full resolution (exp2); 
+B1,77.8,s1,V,1089,564,15,1c,sheet-verified at full resolution (exp2); 
+B1,134.6,s2b,V,1306,573,20,1c,"sheet-verified at full resolution (exp2); TP 1B (1405,746)@0.13 a 200 px: reexaminado, balon en (1306,573) a los pies de ESP 16; el TP 1B era un falso positivo"
+B1,134.8,s2b,V,1252,587,20,1c,"sheet-verified at full resolution (exp2); TP 1B (1279,573)@0.66 a 31 px: balon en (1252,587)"
+B1,135.0,s2b,V,1244,624,20,1c,sheet-verified at full resolution (exp2); 
+B1,135.2,s2b,V,1260,631,20,1c,sheet-verified at full resolution (exp2); label 1B '?': balon visible a los pies de ESP 16
+B1,135.4,s2b,V,1304,613,20,1c,sheet-verified at full resolution (exp2); 
+B1,135.6,s2b,V,1440,631,20,1c,"sheet-verified at full resolution (exp2); TP 1B a 56 px (dos cajas 0.06-0.07): balon en (1440,631)"
+B1,135.8,s2b,V,1427,627,20,1c,sheet-verified at full resolution (exp2); 
+B1,136.0,s2b,V,1517,601,20,1c,"sheet-verified at full resolution (exp2); TP 1B (1440,603)@0.52 a 77 px: reexaminado, balon en (1517,601)"
+B1,136.2,s2b,V,1463,575,20,1c,sheet-verified at full resolution (exp2); 
+B1,136.4,s2b,V,1427,582,20,1c,sheet-verified at full resolution (exp2); 
+B1,136.6,s2b,V,1436,571,20,1c,sheet-verified at full resolution (exp2); 
+B1,136.8,s2b,V,1469,569,15,exp2-corrected,zoom: ball 40px left of 1C
+B1,137.0,s2b,V,1542,561,20,1c,sheet-verified at full resolution (exp2); 
+B1,137.2,s2b,V,1563,547,20,1c,sheet-verified at full resolution (exp2); 
+B1,137.4,s2b,V,1572,566,20,1c,sheet-verified at full resolution (exp2); 
+B1,137.6,s2b,V,1536,578,20,1c,sheet-verified at full resolution (exp2); 
+B1,137.8,s2b,V,1505,603,20,1c,sheet-verified at full resolution (exp2); 
+B1,138.0,s2b,V,1601,603,20,1c,sheet-verified at full resolution (exp2); 
+B1,138.2,s2b,V,1617,606,20,1c,sheet-verified at full resolution (exp2); 
+B1,138.4,s2b,V,1580,599,20,1c,sheet-verified at full resolution (exp2); 
+B1,138.6,s2b,V,1555,664,20,1c,sheet-verified at full resolution (exp2); 
+B1,138.8,s2b,O,,,,exp2-O,"ball not reliably locatable; 1C pos empty grass; candidate at red 10 foot (1301,615) unresolved vs sock"
+B1,139.0,s2b,V,1471,650,20,1c,sheet-verified at full resolution (exp2); 
+B1,139.2,s2b,V,1590,603,20,1c,"sheet-verified at full resolution (exp2); TP 1B (1421,634)@0.12 a 172 px: reexaminado, balon en (1590,603)"
+B1,139.4,s2b,V,1571,592,20,1c,sheet-verified at full resolution (exp2); 
+B1,139.6,s2b,O,,,,exp2-O,"ball not visible; likely occluded by yellow player; interp ~(1471,595) not verifiable"
+B1,139.8,s2b,V,1371,599,25,1c,sheet-verified at full resolution (exp2); 
+B1,140.0,s2b,V,1392,606,25,1c,sheet-verified at full resolution (exp2); 
+B1,140.2,s2b,V,1413,610,25,1c,sheet-verified at full resolution (exp2); 
+B1,140.4,s2b,O,,,,exp2-O,ball not visible at 1C/interp/correction; occluded in scrum
+B1,140.6,s2b,V,1467,610,20,1c,sheet-verified at full resolution (exp2); 
+B1,140.8,s2b,V,1488,615,20,1c,"sheet-verified at full resolution (exp2); TP 1B (1451,609)@0.51 a 37 px: balon en (1488,615)"
+B1,141.0,s2b,V,1371,608,20,1c,sheet-verified at full resolution (exp2); 
+B1,141.2,s2b,V,1349,612,20,exp2-corrected,"zoom: ball at feet, 60px left of 1C; wide candidate (1489,717) is a sock"
+B1,141.4,s2b,V,1430,589,20,1c,sheet-verified at full resolution (exp2); 
+B1,141.6,s2b,V,1466,578,20,exp2-corrected,"confirm zoom: ball partly behind red 17 arm; trajectory-consistent; wide (1346,572) was player head"
+B1,141.8,s2b,V,1519,561,20,1c,sheet-verified at full resolution (exp2); 
+B1,164.8,s3b,V,1142,636,25,1c,"sheet-verified at full resolution (exp2); TP 1B (1072,644)@0.56 a 71 px: balon en (1142,636)"
+B1,165.0,s3b,V,1083,641,25,1c,sheet-verified at full resolution (exp2); 
+B1,165.2,s3b,V,1125,635,15,exp2-corrected,"zoom: ball at yellow foot, 40px right / 35px up from 1C"
+B1,165.4,s3b,V,1160,641,25,1c,sheet-verified at full resolution (exp2); 
+B1,165.6,s3b,V,1187,638,25,1c,sheet-verified at full resolution (exp2); 
+B1,165.8,s3b,V,1202,631,25,1c,sheet-verified at full resolution (exp2); 
+B1,166.0,s3b,V,1175,670,25,1c,"sheet-verified at full resolution (exp2); TP 1B a 55 px: balon en (1148,641) | CORR 1C-rev: balon a plena resolucion a los pies del amarillo (antes 1148,641; error ~40 px)"
+B1,166.2,s3b,V,1227,631,25,1c,sheet-verified at full resolution (exp2); 
+B1,166.4,s3b,V,1219,655,25,1c,sheet-verified at full resolution (exp2); 
+B1,166.6,s3b,V,1286,648,25,1c,sheet-verified at full resolution (exp2); 
+B1,166.8,s3b,V,1175,672,25,1c,"sheet-verified at full resolution (exp2); TP 1B a 148 px (0.10/0.09): balon en (1140,601) | CORR 1C-rev: balon a plena resolucion a los pies del amarillo 2 (antes 1140,601; error ~79 px)"
+B1,167.0,s3b,V,1190,601,25,1c,sheet-verified at full resolution (exp2); 
+B1,167.2,s3b,V,1188,585,25,1c,"sheet-verified at full resolution (exp2); TP 1B (1083,610)@0.09 a 108 px: balon en (1188,585)"
+B1,167.4,s3b,V,1250,678,25,1c,sheet-verified at full resolution (exp2); 
+B1,167.6,s3b,V,1236,674,25,1c,"sheet-verified at full resolution (exp2); TP 1B (714,601)@0.05 a 527 px: balon en (1236,674)"
+B1,167.8,s3b,V,1240,678,25,1c,sheet-verified at full resolution (exp2); 
+B1,168.0,s3b,V,1187,655,25,1c,"sheet-verified at full resolution (exp2); TP 1B (1383,651)@0.11 a 196 px: balon en (1187,655)"
+B1,168.2,s3b,V,1190,617,25,1c,sheet-verified at full resolution (exp2); 
+B1,168.4,s3b,V,1183,641,25,1c,sheet-verified at full resolution (exp2); 
+B1,168.6,s3b,V,1014,655,25,1c,sheet-verified at full resolution (exp2); 
+B1,168.8,s3b,V,1006,674,25,1c,sheet-verified at full resolution (exp2); 
+B1,169.0,s3b,V,1044,692,25,1c,sheet-verified at full resolution (exp2); 
+B1,169.2,s3b,V,1054,638,25,1c,sheet-verified at full resolution (exp2); 
+B1,169.4,s3b,O,,,,1c-O,confirmed O at full resolution (exp2)
+B1,169.6,s3b,O,,,,1c-O,confirmed O at full resolution (exp2)
+B1,169.8,s3b,V,1048,608,25,1c,sheet-verified at full resolution (exp2); 
+B1,170.0,s3b,V,957,650,25,exp2-corrected,"zoom: ball at keeper hands, 20px left / 23px below 1C; glove ambiguity"
+B1,170.2,s3b,V,1407,681,15,exp2-corrected,"zoom: ball in air, 40px right / 10px below 1C"
+B1,170.4,s3b,V,1452,641,25,1c,"sheet-verified at full resolution (exp2); TP 1B (1396,652)@0.53 a 57 px: balon en (1452,641)"
+B1,170.6,s3b,V,1524,688,25,1c,sheet-verified at full resolution (exp2); 
+B1,170.8,s3b,V,1458,668,15,exp2-corrected,"wide: ball at red 17 foot, 105px left of 1C"
+B1,171.0,s3b,V,1463,664,25,1c,sheet-verified at full resolution (exp2); 
+B1,171.2,s3b,V,1357,669,25,1c,"sheet-verified at full resolution (exp2); TP 1B (1396,664)@0.80 a 39 px: balon en (1357,669)"
+B1,171.4,s3b,V,1298,641,25,1c,sheet-verified at full resolution (exp2); 
+B1,194.0,s4,O,,,,1c-O,confirmed O at full resolution (exp2)
+B1,194.2,s4,V,573,230,20,exp2-new,"tiny ball dot on far touchline graphic, 3x zoom; trajectory-consistent"
+B1,194.4,s4,V,618,228,20,exp2-new,"tiny ball dot, 3x zoom; camera pan makes trajectory jumpy"
+B1,194.6,s4,V,588,241,20,1c,"sheet-verified at full resolution (exp2); CORR 1C-rev: el diagnostico de camara (desplazamiento mediano de cajas de persona 5-7 px/fotograma, sin pico) NO confirma un zoom rapido aqui; la primera posicion visible es (588,241); el salto de 385 px comparaba un punto no resoluble (O) con esta posicion"
+B1,194.8,s4,V,604,275,20,exp2-corrected,zoom: tiny ball dot 80px left of 1C
+B1,195.0,s4,V,637,293,20,exp2-corrected,zoom: tiny ball dot 73px left of 1C
+B1,195.2,s4,V,614,305,20,exp2-corrected,zoom: tiny ball dot 100px left of 1C
+B1,195.4,s4,V,718,391,30,1c,sheet-verified at full resolution (exp2); 
+B1,195.6,s4,V,693,473,30,1c,sheet-verified at full resolution (exp2); 
+B1,195.8,s4,V,662,589,30,1c,sheet-verified at full resolution (exp2); 
+B1,196.0,s4,V,730,683,30,1c,sheet-verified at full resolution (exp2); 
+B1,196.2,s4,V,820,748,30,1c,sheet-verified at full resolution (exp2); 
+B1,196.4,s4,V,876,809,30,1c,sheet-verified at full resolution (exp2); 
+B1,196.6,s4,V,931,800,30,1c,sheet-verified at full resolution (exp2); 
+B1,196.8,s4,V,935,800,30,1c,sheet-verified at full resolution (exp2); 
+B1,197.0,s4,V,979,811,30,1c,sheet-verified at full resolution (exp2); 
+B1,197.2,s4,V,995,860,30,1c,sheet-verified at full resolution (exp2); 
+B1,197.4,s4,V,1010,877,30,1c,sheet-verified at full resolution (exp2); 
+B1,197.6,s4,V,1043,877,30,1c,sheet-verified at full resolution (exp2); 
+B1,197.8,s4,V,1064,870,30,1c,sheet-verified at full resolution (exp2); 
+B1,198.0,s4,V,1050,867,30,1c,sheet-verified at full resolution (exp2); 
+B1,198.2,s4,V,1060,865,30,1c,sheet-verified at full resolution (exp2); 
+B1,198.4,s4,V,1081,872,30,1c,"sheet-verified at full resolution (exp2); TP 1B (1305,605)@0.12 a 348 px: reexaminado, balon en (1081,872)"
+B1,198.6,s4,V,1105,846,15,exp2-corrected,"zoom 3x: ball at red 10 foot; wide (1078,958) was a sock"
+B1,198.8,s4,V,1071,818,30,1c,"sheet-verified at full resolution (exp2); TP 1B (1110,851)@0.53 a 51 px: balon en (1071,818)"
+B1,199.0,s4,O,,,,exp2-O,"ball occluded by red 10 body; interp ~(1097,780) not verifiable; wide candidate at red 17 foot is a sock"
+B1,199.2,s4,V,1123,741,20,exp2-corrected,"wide: ball in air, 140px left of 1C; zoom crop missed it by 20px"
+B1,199.4,s4,V,1135,685,30,1c,sheet-verified at full resolution (exp2); 
+B1,199.6,s4,V,1121,674,30,1c,sheet-verified at full resolution (exp2); 
+B1,199.8,s4,V,1102,664,30,1c,sheet-verified at full resolution (exp2); 
+B1,200.0,s4,V,1106,659,15,exp2-corrected,"zoom 3x: ball at shooter foot, 40px left / 23px below 1C"
+B1,200.2,s4,V,1139,617,30,1c,sheet-verified at full resolution (exp2); 
+B1,200.4,s4,V,1090,603,10,1c,"sheet-verified at full resolution (exp2); TP 1B (1435,666)@0.27 a 292 px: reexaminado, balon en (1148,613) | CORR 1C-rev: balon a plena resolucion a los pies del amarillo 6 (antes 1148,613; error ~59 px)"
+B1,200.6,s4,V,1262,664,20,exp2-corrected,"zoom 3x: ball at keeper hands, 103px left / 47px below 1C"
+B1,200.8,s4,V,1279,650,20,exp2-corrected,"zoom 3x: ball at keeper hands, 73px left / 37px below 1C"
+B1,201.0,s4,V,1305,631,15,exp2-corrected,"zoom 3x: ball on goal line by post; wide (1442,648) was glove/sock"
+B1,201.2,s4,V,1415,633,15,exp2-corrected,"zoom 3x: ball on goal line; wide (1357,758) was a sock"
+B1,201.4,s4,V,1332,659,15,exp2-corrected,"zoom 3x: ball at yellow foot; wide (1485,739) was wrong"
+B1,201.6,s4,V,1387,661,15,exp2-corrected,"zoom 3x: ball at yellow foot, 20px right / 67px below 1C"
+B1,201.8,s4,V,1359,643,30,1c,sheet-verified at full resolution (exp2); 
+B3,10.0,c1,O,,,,interp-3x-zoom,ball not visible in 3x zoom; likely occluded by white 14
+B3,10.2,c1,V,821,571,15,interp-3x-zoom,3x zoom; ball at white player feet
+B3,10.4,c1,V,814,589,10,yolo-proposal-verified-3x,ball at crosshair
+B3,10.6,c1,V,891,599,10,yolo-proposal-verified-3x,ball at crosshair
+B3,10.8,c1,V,965,607,10,yolo-proposal-verified-3x,ball at crosshair
+B3,11.0,c1,V,954,648,15,interp-3x-zoom,3x zoom; ball at red 21 feet
+B3,11.2,c1,V,979,608,10,yolo-proposal-verified-3x,ball at crosshair
+B3,11.4,c1,V,1083,643,15,interp-3x-zoom,3x zoom; ball at red 17 / white 15 feet
+B3,11.6,c1,O,,,,interp-3x-zoom,"scrum of players; ball occluded, not visible in 3x zoom"
+B3,11.8,c1,V,1106,606,10,yolo-proposal-verified-3x,ball at crosshair
+B3,12.0,c1,V,1184,607,10,yolo-proposal-verified-3x,ball at crosshair
+B3,12.2,c1,O,,,,interp-3x-zoom,"ball not visible in 3x zoom; group of players, occluded"
+B3,12.4,c1,V,1259,611,10,yolo-proposal-verified-3x,ball at crosshair
+B3,12.6,c1,V,1268,605,10,yolo-proposal-verified-3x,ball at crosshair
+B3,12.8,c1,V,1260,598,10,yolo-proposal-verified-3x,ball at crosshair
+B3,13.0,c1,V,1253,593,10,yolo-proposal-verified-3x,ball at crosshair
+B3,13.2,c1,V,1256,587,10,yolo-proposal-verified-3x,ball at crosshair
+B3,13.4,c1,V,1268,585,10,yolo-proposal-verified-3x,ball at crosshair; shot moment
+B3,13.6,c1,O,,,,full-frame-sheet,ball in flight/in net after shot; 3x zoom on flight path shows no ball
+B3,13.8,c1,O,,,,full-frame-sheet,ball in net; white candidate on SEUR board not confirmed
+B3,14.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,14.2,c1,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+B3,14.4,c1,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+B3,14.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,14.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,15.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,15.2,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,15.4,c1,O,,,,manual-full-frame,ball in net; not reliably locatable (mesh/crowd)
+B3,15.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,15.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,16.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,16.2,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,16.4,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,16.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,16.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+B3,17.0,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+B3,17.2,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+B3,17.4,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+B3,17.6,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+B3,17.8,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+B3,53.4,c2,V,320,644,10,yolo-proposal-verified-3x,ball at crosshair
+B3,53.6,c2,V,308,641,10,yolo-proposal-verified-3x,ball at crosshair
+B3,53.8,c2,V,288,640,10,yolo-proposal-verified-3x,ball at crosshair
+B3,54.0,c2,V,258,680,10,interp-3x-zoom,"3x zoom; ball at red 17 feet, at crosshair"
+B3,54.2,c2,V,261,679,10,interp-3x-zoom,3x zoom; ball at red 17 feet
+B3,54.4,c2,O,,,,manual-full-frame,ball in goalmouth cluster; not reliably locatable
+B3,54.6,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+B3,54.8,c2,O,,,,manual-full-frame,"ball in goalmouth; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+B3,55.0,c2,O,,,,manual-full-frame,ball in goalmouth; not reliably locatable
+B3,55.2,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+B3,55.4,c2,O,,,,manual-full-frame,ball in goalmouth; not reliably locatable
+B3,55.6,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+B3,55.8,c2,O,,,,manual-full-frame,"ball in goalmouth; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+B3,56.0,c2,V,1233,337,15,manual-3x-zoom,ball in flight toward goal; 3x zoom confirms (wide-crop y was off by ~97px)
+B3,56.2,c2,O,,,,manual-full-frame,ball in flight toward goal; not in 3x zoom window / not reliably locatable
+B3,56.4,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+B3,56.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,56.8,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,57.0,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,57.2,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+B3,57.4,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+B3,57.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,57.8,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+B3,58.0,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+B3,58.2,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,58.4,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,58.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,58.8,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,59.0,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,59.2,c2,O,,,,manual-full-frame,"ball in goal area; wide-crop candidate was keeper sock/line, 3x zoom shows empty grass"
+B3,77.8,c3,V,1081,567,10,yolo-proposal-verified-3x,ball at crosshair
+B3,78.0,c3,V,1093,570,10,yolo-proposal-verified-3x,ball at crosshair
+B3,78.2,c3,V,1100,563,15,yolo-proposal-verified-3x,ball ~11px left of crosshair (referee)
+B3,78.4,c3,V,976,502,15,manual-3x-zoom,3x zoom at interp position; ball clear
+B3,78.6,c3,V,914,483,15,manual-3x-zoom,3x zoom at interp position; ball clear
+B3,78.8,c3,V,774,509,10,yolo-proposal-verified-3x,ball at crosshair
+B3,79.0,c3,V,691,494,10,yolo-proposal-verified-3x,ball at crosshair
+B3,79.2,c3,V,771,486,10,yolo-proposal-verified-3x,ball at crosshair
+B3,79.4,c3,V,774,527,15,manual-3x-zoom,3x zoom at interp position; ball clear
+B3,79.6,c3,O,,,,manual-full-frame,"ball at red 9 feet, occluded; not in 3x zoom window"
+B3,79.8,c3,V,826,505,10,yolo-proposal-verified-3x,ball at crosshair
+B3,80.0,c3,V,709,515,10,yolo-proposal-verified-3x,ball at crosshair
+B3,80.2,c3,V,607,546,10,yolo-proposal-verified-3x,ball at crosshair
+B3,80.4,c3,V,537,552,10,yolo-proposal-verified-3x,ball at crosshair
+B3,80.6,c3,V,487,567,10,yolo-proposal-verified-3x,ball at crosshair
+B3,80.8,c3,V,451,587,10,yolo-proposal-verified-3x,ball at crosshair
+B3,81.0,c3,V,433,604,10,yolo-proposal-verified-3x,ball at crosshair
+B3,81.2,c3,V,455,611,10,interp-3x-zoom,3x zoom; ball at red 7 feet
+B3,81.4,c3,V,497,611,10,interp-3x-zoom,3x zoom; ball at red 7 feet
+B3,81.6,c3,V,506,654,15,interp-3x-zoom,3x zoom; ball at red 7 feet (y jump vs neighbours: camera move)
+B3,81.8,c3,O,,,,manual-full-frame,ball in goalmouth cluster; wide crop shows no ball at penalty spot
+B3,82.0,c3,V,664,605,10,yolo-proposal-verified-3x,ball at crosshair
+B3,82.2,c3,V,707,600,10,yolo-proposal-verified-3x,ball at crosshair
+B3,82.4,c3,V,731,628,10,interp-3x-zoom,3x zoom; ball at red 7 feet (pass in between breaks linear interp)
+B3,82.6,c3,V,581,575,10,yolo-proposal-verified-3x,ball at crosshair
+B3,82.8,c3,V,488,561,10,yolo-proposal-verified-3x,ball at crosshair
+B3,83.0,c3,V,426,551,10,yolo-proposal-verified-3x,ball at crosshair
+B3,83.2,c3,V,386,546,10,yolo-proposal-verified-3x,ball at crosshair
+B3,83.4,c3,V,360,551,10,yolo-proposal-verified-3x,ball at crosshair
+B3,83.6,c3,V,322,533,15,manual-3x-zoom,3x zoom at interp position; ball at red 9 feet
+B3,83.8,c3,V,442,533,15,yolo-proposal-verified-3x,ball motion-blurred on line; crosshair on ball
+B3,84.0,c3,V,605,498,10,yolo-proposal-verified-3x,ball at crosshair; goal sequence
+B3,84.2,c3,O,,,,manual-full-frame,"ball near keeper/goal; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+B3,84.4,c3,O,,,,full-frame-sheet,"ball in flight toward goal; 3x zoom shows goalpost/keeper, no separable ball"
+B3,84.6,c3,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan/drum, 3x zoom shows crowd not ball"
+B3,84.8,c3,V,557,393,20,manual-3x-zoom,3x zoom confirms ball in net (upper part)
+B3,85.0,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,85.2,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,85.4,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+B3,85.6,c3,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+B3,95.2,c4,O,,,,manual-full-frame,ball not in 3x zoom window centred on 95.4 position; likely at shooter feet outside crop
+B3,95.4,c4,V,1337,757,10,yolo-proposal-verified-3x,big ball close-up; crosshair on centre
+B3,95.6,c4,V,1320,778,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,95.8,c4,V,1296,812,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+B3,96.0,c4,V,1269,832,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,96.2,c4,V,1218,860,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,96.4,c4,O,,,,manual-full-frame,"close-up of players; ball occluded, not visible in full frame"
+B3,96.6,c4,V,1078,860,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+B3,96.8,c4,V,1015,867,15,yolo-proposal-verified-3x,ball centre ~14px left of crosshair
+B3,97.0,c4,V,1016,829,10,yolo-proposal-verified-3x,big ball under boot; crosshair on centre
+B3,97.2,c4,V,993,748,25,interp-3x-zoom,"3x zoom; ball partially behind red leg, centre approx"
+B3,97.4,c4,O,,,,manual-full-frame,ball occluded by shooter leg in tight close-up; 3x zoom shows leg only
+B3,97.6,c4,V,1213,712,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+B3,97.8,c4,V,1317,686,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,98.0,c4,V,1429,686,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,98.2,c4,V,1514,656,10,yolo-proposal-verified-3x,big ball in air; crosshair on centre
+B3,98.4,c4,V,1561,628,10,yolo-proposal-verified-3x,big ball in air; crosshair on centre
+B3,98.6,c4,V,1571,618,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+B3,98.8,c4,V,1532,615,15,yolo-proposal-verified-3x,big ball motion-blurred at boot; crosshair on centre
+B3,99.0,c4,V,1246,539,20,yolo-proposal-verified-3x,ball motion-blurred at keeper hands; crosshair on ball
+B3,99.2,c4,V,967,472,20,yolo-proposal-verified-3x,ball motion-blurred in air; crosshair on ball
+B3,99.4,c4,V,680,416,15,yolo-proposal-verified-3x,ball in net; crosshair on ball
+B3,99.6,c4,V,338,352,25,manual-3x-zoom,3x zoom confirms ball in net (partially cut at bottom of zoom); wide-crop position was wrong
+B3,99.8,c4,V,123,332,15,yolo-proposal-verified-3x,ball in net; crosshair on ball
+B3,100.0,c4,O,,,,full-frame-sheet,"ball in net; 3x zoom shows net/board only, no separable ball"
+B3,100.2,c4,O,,,,manual-full-frame,ball in net; not visible in upper nor lower wide crop (mesh)
+B3,100.4,c4,O,,,,manual-full-frame,ball in net; not visible in upper nor lower wide crop (mesh)
+B3,100.6,c4,V,17,400,20,yolo-proposal-verified-3x,"ball partial at left edge; 3x zoom confirms (17,400), wide-crop (10,320) was wrong"

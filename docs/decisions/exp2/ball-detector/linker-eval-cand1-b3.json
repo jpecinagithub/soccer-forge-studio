@@ -1,0 +1,22 @@
+{
+  "n_ref": 74,
+  "rec25": 0.757,
+  "rec50": 0.838,
+  "rec100": 0.838,
+  "correct_frames": 62,
+  "only_wrong_frames": 8,
+  "error_rate": 0.108,
+  "both_frames": 0,
+  "no_track_frames": 4,
+  "n_tracks": 30,
+  "id_changes": 14,
+  "max_gap_s": 0.4,
+  "label": "cand1-linker-b3",
+  "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+  "links": [
+    "docs/decisions/exp2/ball-detector/linker/link-cand1-c1-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-cand1-c2-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-cand1-c3-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-cand1-c4-g120-c8.json"
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+  "n_ref": 74,
+  "tols": [
+    25,
+    50,
+    100
+  ],
+  "detectors": {
+    "yolov8s-1280": {
+      "config": {
+        "sources": [
+          "docs/decisions/exp2/ball-detector/pred1280-c1.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c2.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c3.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c4.json"
+        ],
+        "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+        "ball_cls": "sports ball",
+        "pred_configs": [
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 10.0
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 53.4
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 77.8
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 95.2
+          }
+        ]
+      },
+      "file": "docs/decisions/exp2/ball-detector/norm-yolo-b3.json",
+      "by_conf": {
+        "0.05": {
+          "25": {
+            "conf": 0.05,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.77,
+            "precision": 0.139,
+            "tp_dets": 57,
+            "fp_dets": 163,
+            "fp_per_frame": 2.203,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 0.6
+          },
+          "50": {
+            "conf": 0.05,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.797,
+            "precision": 0.144,
+            "tp_dets": 59,
+            "fp_dets": 156,
+            "fp_per_frame": 2.108,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 0.7
+          },
+          "100": {
+            "conf": 0.05,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.865,
+            "precision": 0.156,
+            "tp_dets": 64,
+            "fp_dets": 149,
+            "fp_per_frame": 2.014,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 28.3
+          }
+        },
+        "0.1": {
+          "25": {
+            "conf": 0.1,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.77,
+            "precision": 0.218,
+            "tp_dets": 57,
+            "fp_dets": 81,
+            "fp_per_frame": 1.095,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 1.9
+          },
+          "50": {
+            "conf": 0.1,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.797,
+            "precision": 0.225,
+            "tp_dets": 59,
+            "fp_dets": 74,
+            "fp_per_frame": 1.0,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "100": {
+            "conf": 0.1,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.865,
+            "precision": 0.244,
+            "tp_dets": 64,
+            "fp_dets": 67,
+            "fp_per_frame": 0.905,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 28.3
+          }
+        },
+        "0.25": {
+          "25": {
+            "conf": 0.25,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.716,
+            "precision": 0.356,
+            "tp_dets": 53,
+            "fp_dets": 20,
+            "fp_per_frame": 0.27,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "50": {
+            "conf": 0.25,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.716,
+            "precision": 0.356,
+            "tp_dets": 53,
+            "fp_dets": 15,
+            "fp_per_frame": 0.203,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "100": {
+            "conf": 0.25,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.743,
+            "precision": 0.369,
+            "tp_dets": 55,
+            "fp_dets": 10,
+            "fp_per_frame": 0.135,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 8.6
+          }
+        },
+        "0.4": {
+          "25": {
+            "conf": 0.4,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.581,
+            "precision": 0.394,
+            "tp_dets": 43,
+            "fp_dets": 10,
+            "fp_per_frame": 0.135,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "50": {
+            "conf": 0.4,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.595,
+            "precision": 0.404,
+            "tp_dets": 44,
+            "fp_dets": 8,
+            "fp_per_frame": 0.108,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.2
+          },
+          "100": {
+            "conf": 0.4,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.608,
+            "precision": 0.413,
+            "tp_dets": 45,
+            "fp_dets": 4,
+            "fp_per_frame": 0.054,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 8.6
+          }
+        },
+        "0.6": {
+          "25": {
+            "conf": 0.6,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.392,
+            "precision": 0.382,
+            "tp_dets": 29,
+            "fp_dets": 5,
+            "fp_per_frame": 0.068,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 7.2
+          },
+          "50": {
+            "conf": 0.6,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.392,
+            "precision": 0.382,
+            "tp_dets": 29,
+            "fp_dets": 3,
+            "fp_per_frame": 0.041,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 7.2
+          },
+          "100": {
+            "conf": 0.6,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.405,
+            "precision": 0.395,
+            "tp_dets": 30,
+            "fp_dets": 1,
+            "fp_per_frame": 0.014,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 10.0
+          }
+        }
+      }
+    },
+    "cand1-yolo11n-soccernet": {
+      "config": {
+        "sources": [
+          "docs/decisions/exp2/ball-detector/cand1-c1.json",
+          "docs/decisions/exp2/ball-detector/cand1-c2.json",
+          "docs/decisions/exp2/ball-detector/cand1-c3.json",
+          "docs/decisions/exp2/ball-detector/cand1-c4.json"
+        ],
+        "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+        "ball_cls": "ball",
+        "pred_configs": [
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 10.0
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 53.4
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 77.8
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 95.2
+          }
+        ]
+      },
+      "file": "docs/decisions/exp2/ball-detector/norm-cand1-b3.json",
+      "by_conf": {
+        "0.05": {
+          "25": {
+            "conf": 0.05,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.797,
+            "precision": 0.125,
+            "tp_dets": 59,
+            "fp_dets": 83,
+            "fp_per_frame": 1.122,
+            "total_dets": 471,
+            "loc_err_median": 0.9,
+            "loc_err_p90": 3.8
+          },
+          "50": {
+            "conf": 0.05,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.892,
+            "precision": 0.14,
+            "tp_dets": 66,
+            "fp_dets": 61,
+            "fp_per_frame": 0.824,
+            "total_dets": 471,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 25.3
+          },
+          "100": {
+            "conf": 0.05,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.946,
+            "precision": 0.149,
+            "tp_dets": 70,
+            "fp_dets": 33,
+            "fp_per_frame": 0.446,
+            "total_dets": 471,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.7
+          }
+        },
+        "0.1": {
+          "25": {
+            "conf": 0.1,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.797,
+            "precision": 0.192,
+            "tp_dets": 59,
+            "fp_dets": 53,
+            "fp_per_frame": 0.716,
+            "total_dets": 308,
+            "loc_err_median": 0.9,
+            "loc_err_p90": 3.8
+          },
+          "50": {
+            "conf": 0.1,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.878,
+            "precision": 0.211,
+            "tp_dets": 65,
+            "fp_dets": 37,
+            "fp_per_frame": 0.5,
+            "total_dets": 308,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.1,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.932,
+            "precision": 0.224,
+            "tp_dets": 69,
+            "fp_dets": 19,
+            "fp_per_frame": 0.257,
+            "total_dets": 308,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.7
+          }
+        },
+        "0.25": {
+          "25": {
+            "conf": 0.25,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.797,
+            "precision": 0.244,
+            "tp_dets": 59,
+            "fp_dets": 40,
+            "fp_per_frame": 0.541,
+            "total_dets": 242,
+            "loc_err_median": 0.9,
+            "loc_err_p90": 3.8
+          },
+          "50": {
+            "conf": 0.25,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.878,
+            "precision": 0.269,
+            "tp_dets": 65,
+            "fp_dets": 25,
+            "fp_per_frame": 0.338,
+            "total_dets": 242,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.25,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.932,
+            "precision": 0.285,
+            "tp_dets": 69,
+            "fp_dets": 8,
+            "fp_per_frame": 0.108,
+            "total_dets": 242,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.7
+          }
+        },
+        "0.4": {
+          "25": {
+            "conf": 0.4,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.784,
+            "precision": 0.286,
+            "tp_dets": 58,
+            "fp_dets": 29,
+            "fp_per_frame": 0.392,
+            "total_dets": 203,
+            "loc_err_median": 0.9,
+            "loc_err_p90": 3.8
+          },
+          "50": {
+            "conf": 0.4,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.851,
+            "precision": 0.31,
+            "tp_dets": 63,
+            "fp_dets": 18,
+            "fp_per_frame": 0.243,
+            "total_dets": 203,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.4,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.919,
+            "precision": 0.335,
+            "tp_dets": 68,
+            "fp_dets": 3,
+            "fp_per_frame": 0.041,
+            "total_dets": 203,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 43.4
+          }
+        },
+        "0.6": {
+          "25": {
+            "conf": 0.6,
+            "tol": 25,
+            "n_ref": 74,
+            "recall": 0.541,
+            "precision": 0.354,
+            "tp_dets": 40,
+            "fp_dets": 7,
+            "fp_per_frame": 0.095,
+            "total_dets": 113,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 12.6
+          },
+          "50": {
+            "conf": 0.6,
+            "tol": 50,
+            "n_ref": 74,
+            "recall": 0.568,
+            "precision": 0.372,
+            "tp_dets": 42,
+            "fp_dets": 4,
+            "fp_per_frame": 0.054,
+            "total_dets": 113,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 16.2
+          },
+          "100": {
+            "conf": 0.6,
+            "tol": 100,
+            "n_ref": 74,
+            "recall": 0.622,
+            "precision": 0.407,
+            "tp_dets": 46,
+            "fp_dets": 0,
+            "fp_per_frame": 0.0,
+            "total_dets": 113,
+            "loc_err_median": 1.2,
+            "loc_err_p90": 40.7
+          }
+        }
+      }
+    }
+  }
+}

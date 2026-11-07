@@ -1,0 +1,22 @@
+{
+  "n_ref": 74,
+  "rec25": 0.716,
+  "rec50": 0.716,
+  "rec100": 0.716,
+  "correct_frames": 53,
+  "only_wrong_frames": 4,
+  "error_rate": 0.054,
+  "both_frames": 9,
+  "no_track_frames": 17,
+  "n_tracks": 20,
+  "id_changes": 0,
+  "max_gap_s": 0.6,
+  "label": "yolo-linker-b3",
+  "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+  "links": [
+    "docs/decisions/exp2/ball-detector/linker/link-yolo-c1-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-yolo-c2-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-yolo-c3-g120-c8.json",
+    "docs/decisions/exp2/ball-detector/linker/link-yolo-c4-g120-c8.json"
+  ]
+}

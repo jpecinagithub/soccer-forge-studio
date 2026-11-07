@@ -1,0 +1,20 @@
+{
+  "n_ref": 73,
+  "rec25": 0.315,
+  "rec50": 0.438,
+  "rec100": 0.438,
+  "correct_frames": 32,
+  "only_wrong_frames": 9,
+  "error_rate": 0.123,
+  "both_frames": 2,
+  "no_track_frames": 32,
+  "n_tracks": 14,
+  "id_changes": 0,
+  "max_gap_s": 2.0,
+  "label": "yolo-linker-tune",
+  "ref": "data/clips/work/exp2/ref-positions-b1.csv",
+  "links": [
+    "docs/decisions/exp1c/link-s1-g120-c8.json",
+    "docs/decisions/exp1c/link-s2-g120-c8.json"
+  ]
+}

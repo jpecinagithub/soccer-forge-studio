@@ -1,0 +1,139 @@
+t_abs,segment,status,x,y,unc,source,note
+10.0,c1,O,,,,interp-3x-zoom,ball not visible in 3x zoom; likely occluded by white 14
+10.2,c1,V,821,571,15,interp-3x-zoom,3x zoom; ball at white player feet
+10.4,c1,V,814,589,10,yolo-proposal-verified-3x,ball at crosshair
+10.6,c1,V,891,599,10,yolo-proposal-verified-3x,ball at crosshair
+10.8,c1,V,965,607,10,yolo-proposal-verified-3x,ball at crosshair
+11.0,c1,V,954,648,15,interp-3x-zoom,3x zoom; ball at red 21 feet
+11.2,c1,V,979,608,10,yolo-proposal-verified-3x,ball at crosshair
+11.4,c1,V,1083,643,15,interp-3x-zoom,3x zoom; ball at red 17 / white 15 feet
+11.6,c1,O,,,,interp-3x-zoom,"scrum of players; ball occluded, not visible in 3x zoom"
+11.8,c1,V,1106,606,10,yolo-proposal-verified-3x,ball at crosshair
+12.0,c1,V,1184,607,10,yolo-proposal-verified-3x,ball at crosshair
+12.2,c1,O,,,,interp-3x-zoom,"ball not visible in 3x zoom; group of players, occluded"
+12.4,c1,V,1259,611,10,yolo-proposal-verified-3x,ball at crosshair
+12.6,c1,V,1268,605,10,yolo-proposal-verified-3x,ball at crosshair
+12.8,c1,V,1260,598,10,yolo-proposal-verified-3x,ball at crosshair
+13.0,c1,V,1253,593,10,yolo-proposal-verified-3x,ball at crosshair
+13.2,c1,V,1256,587,10,yolo-proposal-verified-3x,ball at crosshair
+13.4,c1,V,1268,585,10,yolo-proposal-verified-3x,ball at crosshair; shot moment
+13.6,c1,O,,,,full-frame-sheet,ball in flight/in net after shot; 3x zoom on flight path shows no ball
+13.8,c1,O,,,,full-frame-sheet,ball in net; white candidate on SEUR board not confirmed
+14.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+14.2,c1,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+14.4,c1,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+14.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+14.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+15.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+15.2,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+15.4,c1,O,,,,manual-full-frame,ball in net; not reliably locatable (mesh/crowd)
+15.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+15.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+16.0,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+16.2,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+16.4,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+16.6,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+16.8,c1,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable at full res
+17.0,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+17.2,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+17.4,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+17.6,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+17.8,c1,O,,,,full-frame-sheet,close-up celebration; ball not in frame
+53.4,c2,V,320,644,10,yolo-proposal-verified-3x,ball at crosshair
+53.6,c2,V,308,641,10,yolo-proposal-verified-3x,ball at crosshair
+53.8,c2,V,288,640,10,yolo-proposal-verified-3x,ball at crosshair
+54.0,c2,V,258,680,10,interp-3x-zoom,"3x zoom; ball at red 17 feet, at crosshair"
+54.2,c2,V,261,679,10,interp-3x-zoom,3x zoom; ball at red 17 feet
+54.4,c2,O,,,,manual-full-frame,ball in goalmouth cluster; not reliably locatable
+54.6,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+54.8,c2,O,,,,manual-full-frame,"ball in goalmouth; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+55.0,c2,O,,,,manual-full-frame,ball in goalmouth; not reliably locatable
+55.2,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+55.4,c2,O,,,,manual-full-frame,ball in goalmouth; not reliably locatable
+55.6,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+55.8,c2,O,,,,manual-full-frame,"ball in goalmouth; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+56.0,c2,V,1233,337,15,manual-3x-zoom,ball in flight toward goal; 3x zoom confirms (wide-crop y was off by ~97px)
+56.2,c2,O,,,,manual-full-frame,ball in flight toward goal; not in 3x zoom window / not reliably locatable
+56.4,c2,O,,,,full-frame-sheet,ball in goalmouth cluster; not reliably locatable
+56.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+56.8,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+57.0,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+57.2,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+57.4,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+57.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+57.8,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+58.0,c2,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+58.2,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+58.4,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+58.6,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+58.8,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+59.0,c2,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+59.2,c2,O,,,,manual-full-frame,"ball in goal area; wide-crop candidate was keeper sock/line, 3x zoom shows empty grass"
+77.8,c3,V,1081,567,10,yolo-proposal-verified-3x,ball at crosshair
+78.0,c3,V,1093,570,10,yolo-proposal-verified-3x,ball at crosshair
+78.2,c3,V,1100,563,15,yolo-proposal-verified-3x,ball ~11px left of crosshair (referee)
+78.4,c3,V,976,502,15,manual-3x-zoom,3x zoom at interp position; ball clear
+78.6,c3,V,914,483,15,manual-3x-zoom,3x zoom at interp position; ball clear
+78.8,c3,V,774,509,10,yolo-proposal-verified-3x,ball at crosshair
+79.0,c3,V,691,494,10,yolo-proposal-verified-3x,ball at crosshair
+79.2,c3,V,771,486,10,yolo-proposal-verified-3x,ball at crosshair
+79.4,c3,V,774,527,15,manual-3x-zoom,3x zoom at interp position; ball clear
+79.6,c3,O,,,,manual-full-frame,"ball at red 9 feet, occluded; not in 3x zoom window"
+79.8,c3,V,826,505,10,yolo-proposal-verified-3x,ball at crosshair
+80.0,c3,V,709,515,10,yolo-proposal-verified-3x,ball at crosshair
+80.2,c3,V,607,546,10,yolo-proposal-verified-3x,ball at crosshair
+80.4,c3,V,537,552,10,yolo-proposal-verified-3x,ball at crosshair
+80.6,c3,V,487,567,10,yolo-proposal-verified-3x,ball at crosshair
+80.8,c3,V,451,587,10,yolo-proposal-verified-3x,ball at crosshair
+81.0,c3,V,433,604,10,yolo-proposal-verified-3x,ball at crosshair
+81.2,c3,V,455,611,10,interp-3x-zoom,3x zoom; ball at red 7 feet
+81.4,c3,V,497,611,10,interp-3x-zoom,3x zoom; ball at red 7 feet
+81.6,c3,V,506,654,15,interp-3x-zoom,3x zoom; ball at red 7 feet (y jump vs neighbours: camera move)
+81.8,c3,O,,,,manual-full-frame,ball in goalmouth cluster; wide crop shows no ball at penalty spot
+82.0,c3,V,664,605,10,yolo-proposal-verified-3x,ball at crosshair
+82.2,c3,V,707,600,10,yolo-proposal-verified-3x,ball at crosshair
+82.4,c3,V,731,628,10,interp-3x-zoom,3x zoom; ball at red 7 feet (pass in between breaks linear interp)
+82.6,c3,V,581,575,10,yolo-proposal-verified-3x,ball at crosshair
+82.8,c3,V,488,561,10,yolo-proposal-verified-3x,ball at crosshair
+83.0,c3,V,426,551,10,yolo-proposal-verified-3x,ball at crosshair
+83.2,c3,V,386,546,10,yolo-proposal-verified-3x,ball at crosshair
+83.4,c3,V,360,551,10,yolo-proposal-verified-3x,ball at crosshair
+83.6,c3,V,322,533,15,manual-3x-zoom,3x zoom at interp position; ball at red 9 feet
+83.8,c3,V,442,533,15,yolo-proposal-verified-3x,ball motion-blurred on line; crosshair on ball
+84.0,c3,V,605,498,10,yolo-proposal-verified-3x,ball at crosshair; goal sequence
+84.2,c3,O,,,,manual-full-frame,"ball near keeper/goal; wide-crop candidate was a fan, 3x zoom shows crowd not ball"
+84.4,c3,O,,,,full-frame-sheet,"ball in flight toward goal; 3x zoom shows goalpost/keeper, no separable ball"
+84.6,c3,O,,,,manual-full-frame,"ball in net; wide-crop candidate was a fan/drum, 3x zoom shows crowd not ball"
+84.8,c3,V,557,393,20,manual-3x-zoom,3x zoom confirms ball in net (upper part)
+85.0,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+85.2,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+85.4,c3,O,,,,full-frame-sheet,ball in goal net after goal; not reliably locatable
+85.6,c3,O,,,,manual-full-frame,ball in net; 3x zoom on net shows no separable ball
+95.2,c4,O,,,,manual-full-frame,ball not in 3x zoom window centred on 95.4 position; likely at shooter feet outside crop
+95.4,c4,V,1337,757,10,yolo-proposal-verified-3x,big ball close-up; crosshair on centre
+95.6,c4,V,1320,778,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+95.8,c4,V,1296,812,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+96.0,c4,V,1269,832,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+96.2,c4,V,1218,860,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+96.4,c4,O,,,,manual-full-frame,"close-up of players; ball occluded, not visible in full frame"
+96.6,c4,V,1078,860,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+96.8,c4,V,1015,867,15,yolo-proposal-verified-3x,ball centre ~14px left of crosshair
+97.0,c4,V,1016,829,10,yolo-proposal-verified-3x,big ball under boot; crosshair on centre
+97.2,c4,V,993,748,25,interp-3x-zoom,"3x zoom; ball partially behind red leg, centre approx"
+97.4,c4,O,,,,manual-full-frame,ball occluded by shooter leg in tight close-up; 3x zoom shows leg only
+97.6,c4,V,1213,712,10,yolo-proposal-verified-3x,big ball at boot; crosshair on centre
+97.8,c4,V,1317,686,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+98.0,c4,V,1429,686,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+98.2,c4,V,1514,656,10,yolo-proposal-verified-3x,big ball in air; crosshair on centre
+98.4,c4,V,1561,628,10,yolo-proposal-verified-3x,big ball in air; crosshair on centre
+98.6,c4,V,1571,618,10,yolo-proposal-verified-3x,big ball; crosshair on centre
+98.8,c4,V,1532,615,15,yolo-proposal-verified-3x,big ball motion-blurred at boot; crosshair on centre
+99.0,c4,V,1246,539,20,yolo-proposal-verified-3x,ball motion-blurred at keeper hands; crosshair on ball
+99.2,c4,V,967,472,20,yolo-proposal-verified-3x,ball motion-blurred in air; crosshair on ball
+99.4,c4,V,680,416,15,yolo-proposal-verified-3x,ball in net; crosshair on ball
+99.6,c4,V,338,352,25,manual-3x-zoom,3x zoom confirms ball in net (partially cut at bottom of zoom); wide-crop position was wrong
+99.8,c4,V,123,332,15,yolo-proposal-verified-3x,ball in net; crosshair on ball
+100.0,c4,O,,,,full-frame-sheet,"ball in net; 3x zoom shows net/board only, no separable ball"
+100.2,c4,O,,,,manual-full-frame,ball in net; not visible in upper nor lower wide crop (mesh)
+100.4,c4,O,,,,manual-full-frame,ball in net; not visible in upper nor lower wide crop (mesh)
+100.6,c4,V,17,400,20,yolo-proposal-verified-3x,"ball partial at left edge; 3x zoom confirms (17,400), wide-crop (10,320) was wrong"
