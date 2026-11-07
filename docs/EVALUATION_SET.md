@@ -1,6 +1,8 @@
 # Set de evaluación — clips y anotaciones humanas (Fase 0, 2026-11-06)
 
 > Estado 2026-11-06: **piloto con 1 clip recibido y verificado** (B1, Georgia 0-4 España, 237,24 s, SHA256 comprobado). **Anotación humana: primer pase hecho 2026-11-06 y corregido a v2 el mismo día** (`docs/evaluation/B1-georgia-espana-annotation.json`, 8 jugadas, 11 eventos, 5 puntuables, 4 goles), tras revisión por IA del 33 % de las jugadas + 2 tramos (`docs/evaluation/REVISION-B1.md`). **Adjudicación humana pendiente**: esta referencia NO es una anotación humana validada. El resto del set sigue pendiente. No se evalúa sobre material usado para ajustar el sistema.
+>
+> **Decisión 2026-11-07: B1 es material de desarrollo** (ya sirvió para revisar y corregir el protocolo). La comparación final entre arquitecturas usará otro partido sin usar; candidato: B2 (España 2-0 Georgia), reservado.
 
 ## 1. Composición mínima
 
