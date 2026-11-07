@@ -1,0 +1,1228 @@
+{
+  "ref": "docs/decisions/exp3/ref-positions-b3-v3.csv",
+  "n_ref_V": 76,
+  "n_absent_confirmed": 5,
+  "n_not_localizable": 57,
+  "tols": [
+    25,
+    50,
+    100
+  ],
+  "method": "precision sobre casos adjudicables (V + ausente confirmado); detecciones en no-localizable aparte como desconocidas; ver cabecera del script",
+  "legacy_exp2_tol50": {
+    "source": "docs/decisions/exp2/ball-detector/eval-b3.json",
+    "tol": 50,
+    "detectors": {
+      "yolov8s-1280": {
+        "0.05": {
+          "recall": 0.797,
+          "precision_legacy": 0.144,
+          "tp_dets": 59,
+          "total_dets": 409,
+          "n_ref_V": 74
+        },
+        "0.1": {
+          "recall": 0.797,
+          "precision_legacy": 0.225,
+          "tp_dets": 59,
+          "total_dets": 262,
+          "n_ref_V": 74
+        },
+        "0.25": {
+          "recall": 0.716,
+          "precision_legacy": 0.356,
+          "tp_dets": 53,
+          "total_dets": 149,
+          "n_ref_V": 74
+        },
+        "0.4": {
+          "recall": 0.595,
+          "precision_legacy": 0.404,
+          "tp_dets": 44,
+          "total_dets": 109,
+          "n_ref_V": 74
+        },
+        "0.6": {
+          "recall": 0.392,
+          "precision_legacy": 0.382,
+          "tp_dets": 29,
+          "total_dets": 76,
+          "n_ref_V": 74
+        }
+      },
+      "cand1-yolo11n-soccernet": {
+        "0.05": {
+          "recall": 0.892,
+          "precision_legacy": 0.14,
+          "tp_dets": 66,
+          "total_dets": 471,
+          "n_ref_V": 74
+        },
+        "0.1": {
+          "recall": 0.878,
+          "precision_legacy": 0.211,
+          "tp_dets": 65,
+          "total_dets": 308,
+          "n_ref_V": 74
+        },
+        "0.25": {
+          "recall": 0.878,
+          "precision_legacy": 0.269,
+          "tp_dets": 65,
+          "total_dets": 242,
+          "n_ref_V": 74
+        },
+        "0.4": {
+          "recall": 0.851,
+          "precision_legacy": 0.31,
+          "tp_dets": 63,
+          "total_dets": 203,
+          "n_ref_V": 74
+        },
+        "0.6": {
+          "recall": 0.568,
+          "precision_legacy": 0.372,
+          "tp_dets": 42,
+          "total_dets": 113,
+          "n_ref_V": 74
+        }
+      }
+    }
+  },
+  "detectors": {
+    "yolov8s-1280": {
+      "config": {
+        "sources": [
+          "docs/decisions/exp2/ball-detector/pred1280-c1.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c2.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c3.json",
+          "docs/decisions/exp2/ball-detector/pred1280-c4.json"
+        ],
+        "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+        "ball_cls": "sports ball",
+        "pred_configs": [
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 10.0
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 53.4
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 77.8
+          },
+          {
+            "weights": "yolov8s.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0,
+              32
+            ],
+            "offset_seconds": 95.2
+          }
+        ]
+      },
+      "file": "docs/decisions/exp2/ball-detector/norm-yolo-b3.json",
+      "by_conf": {
+        "0.05": {
+          "25": {
+            "conf": 0.05,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.763,
+            "recall_frames": 58,
+            "precision_adjudicable": 0.253,
+            "precision_legacy_exp2": 0.142,
+            "tp_dets": 58,
+            "fp_V_dets": 171,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 229,
+            "unknown_dets_NL": 81,
+            "unknown_frames_NL": 33,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 0.7
+          },
+          "50": {
+            "conf": 0.05,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.789,
+            "recall_frames": 60,
+            "precision_adjudicable": 0.27,
+            "precision_legacy_exp2": 0.147,
+            "tp_dets": 60,
+            "fp_V_dets": 162,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 222,
+            "unknown_dets_NL": 81,
+            "unknown_frames_NL": 33,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 6.9
+          },
+          "100": {
+            "conf": 0.05,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.855,
+            "recall_frames": 65,
+            "precision_adjudicable": 0.295,
+            "precision_legacy_exp2": 0.159,
+            "tp_dets": 65,
+            "fp_V_dets": 155,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 220,
+            "unknown_dets_NL": 81,
+            "unknown_frames_NL": 33,
+            "total_dets": 409,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 28.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 3,
+              "recall": 0.15
+            },
+            "50": {
+              "n": 20,
+              "hits": 5,
+              "recall": 0.25
+            },
+            "100": {
+              "n": 20,
+              "hits": 10,
+              "recall": 0.5
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 4,
+              "recall": 0.182
+            },
+            "50": {
+              "n": 22,
+              "hits": 6,
+              "recall": 0.273
+            },
+            "100": {
+              "n": 22,
+              "hits": 11,
+              "recall": 0.5
+            }
+          }
+        },
+        "0.1": {
+          "25": {
+            "conf": 0.1,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.763,
+            "recall_frames": 58,
+            "precision_adjudicable": 0.4,
+            "precision_legacy_exp2": 0.221,
+            "tp_dets": 58,
+            "fp_V_dets": 87,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 145,
+            "unknown_dets_NL": 27,
+            "unknown_frames_NL": 17,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 6.9
+          },
+          "50": {
+            "conf": 0.1,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.789,
+            "recall_frames": 60,
+            "precision_adjudicable": 0.435,
+            "precision_legacy_exp2": 0.229,
+            "tp_dets": 60,
+            "fp_V_dets": 78,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 138,
+            "unknown_dets_NL": 27,
+            "unknown_frames_NL": 17,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.2
+          },
+          "100": {
+            "conf": 0.1,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.855,
+            "recall_frames": 65,
+            "precision_adjudicable": 0.478,
+            "precision_legacy_exp2": 0.248,
+            "tp_dets": 65,
+            "fp_V_dets": 71,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 136,
+            "unknown_dets_NL": 27,
+            "unknown_frames_NL": 17,
+            "total_dets": 262,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 28.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 3,
+              "recall": 0.15
+            },
+            "50": {
+              "n": 20,
+              "hits": 5,
+              "recall": 0.25
+            },
+            "100": {
+              "n": 20,
+              "hits": 10,
+              "recall": 0.5
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 4,
+              "recall": 0.182
+            },
+            "50": {
+              "n": 22,
+              "hits": 6,
+              "recall": 0.273
+            },
+            "100": {
+              "n": 22,
+              "hits": 11,
+              "recall": 0.5
+            }
+          }
+        },
+        "0.25": {
+          "25": {
+            "conf": 0.25,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.697,
+            "recall_frames": 53,
+            "precision_adjudicable": 0.707,
+            "precision_legacy_exp2": 0.356,
+            "tp_dets": 53,
+            "fp_V_dets": 22,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 75,
+            "unknown_dets_NL": 4,
+            "unknown_frames_NL": 3,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "50": {
+            "conf": 0.25,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.711,
+            "recall_frames": 54,
+            "precision_adjudicable": 0.771,
+            "precision_legacy_exp2": 0.362,
+            "tp_dets": 54,
+            "fp_V_dets": 16,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 70,
+            "unknown_dets_NL": 4,
+            "unknown_frames_NL": 3,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.2
+          },
+          "100": {
+            "conf": 0.25,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.737,
+            "recall_frames": 56,
+            "precision_adjudicable": 0.836,
+            "precision_legacy_exp2": 0.376,
+            "tp_dets": 56,
+            "fp_V_dets": 11,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 67,
+            "unknown_dets_NL": 4,
+            "unknown_frames_NL": 3,
+            "total_dets": 149,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 16.7
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            },
+            "50": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            },
+            "100": {
+              "n": 20,
+              "hits": 4,
+              "recall": 0.2
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 2,
+              "recall": 0.091
+            },
+            "50": {
+              "n": 22,
+              "hits": 3,
+              "recall": 0.136
+            },
+            "100": {
+              "n": 22,
+              "hits": 5,
+              "recall": 0.227
+            }
+          }
+        },
+        "0.4": {
+          "25": {
+            "conf": 0.4,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.566,
+            "recall_frames": 43,
+            "precision_adjudicable": 0.811,
+            "precision_legacy_exp2": 0.394,
+            "tp_dets": 43,
+            "fp_V_dets": 10,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 53,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 7.0
+          },
+          "50": {
+            "conf": 0.4,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.592,
+            "recall_frames": 45,
+            "precision_adjudicable": 0.849,
+            "precision_legacy_exp2": 0.413,
+            "tp_dets": 45,
+            "fp_V_dets": 8,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 53,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 8.6
+          },
+          "100": {
+            "conf": 0.4,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.605,
+            "recall_frames": 46,
+            "precision_adjudicable": 0.92,
+            "precision_legacy_exp2": 0.422,
+            "tp_dets": 46,
+            "fp_V_dets": 4,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 50,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 109,
+            "loc_err_median": 0.4,
+            "loc_err_p90": 16.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            },
+            "50": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            },
+            "100": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 2,
+              "recall": 0.091
+            },
+            "50": {
+              "n": 22,
+              "hits": 3,
+              "recall": 0.136
+            },
+            "100": {
+              "n": 22,
+              "hits": 3,
+              "recall": 0.136
+            }
+          }
+        },
+        "0.6": {
+          "25": {
+            "conf": 0.6,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.382,
+            "recall_frames": 29,
+            "precision_adjudicable": 0.853,
+            "precision_legacy_exp2": 0.382,
+            "tp_dets": 29,
+            "fp_V_dets": 5,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 34,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 7.2
+          },
+          "50": {
+            "conf": 0.6,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.395,
+            "recall_frames": 30,
+            "precision_adjudicable": 0.909,
+            "precision_legacy_exp2": 0.395,
+            "tp_dets": 30,
+            "fp_V_dets": 3,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 33,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 10.0
+          },
+          "100": {
+            "conf": 0.6,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.408,
+            "recall_frames": 31,
+            "precision_adjudicable": 0.969,
+            "precision_legacy_exp2": 0.408,
+            "tp_dets": 31,
+            "fp_V_dets": 1,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 32,
+            "unknown_dets_NL": 2,
+            "unknown_frames_NL": 2,
+            "total_dets": 76,
+            "loc_err_median": 0.5,
+            "loc_err_p90": 10.0
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 1,
+              "recall": 0.05
+            },
+            "50": {
+              "n": 20,
+              "hits": 1,
+              "recall": 0.05
+            },
+            "100": {
+              "n": 20,
+              "hits": 1,
+              "recall": 0.05
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 1,
+              "recall": 0.045
+            },
+            "50": {
+              "n": 22,
+              "hits": 2,
+              "recall": 0.091
+            },
+            "100": {
+              "n": 22,
+              "hits": 2,
+              "recall": 0.091
+            }
+          }
+        }
+      }
+    },
+    "cand1-yolo11n-soccernet": {
+      "config": {
+        "sources": [
+          "docs/decisions/exp2/ball-detector/cand1-c1.json",
+          "docs/decisions/exp2/ball-detector/cand1-c2.json",
+          "docs/decisions/exp2/ball-detector/cand1-c3.json",
+          "docs/decisions/exp2/ball-detector/cand1-c4.json"
+        ],
+        "ref": "data/clips/work/exp2/ref-positions-b3.csv",
+        "ball_cls": "ball",
+        "pred_configs": [
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 10.0
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 53.4
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 77.8
+          },
+          {
+            "weights": "exp2/weights/best.pt",
+            "imgsz": 1280,
+            "conf": 0.05,
+            "iou": 0.5,
+            "classes": [
+              0
+            ],
+            "offset_seconds": 95.2
+          }
+        ]
+      },
+      "file": "docs/decisions/exp2/ball-detector/norm-cand1-b3.json",
+      "by_conf": {
+        "0.05": {
+          "25": {
+            "conf": 0.05,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.803,
+            "recall_frames": 61,
+            "precision_adjudicable": 0.391,
+            "precision_legacy_exp2": 0.13,
+            "tp_dets": 61,
+            "fp_V_dets": 88,
+            "fp_absent_dets": 7,
+            "adjudicable_dets": 156,
+            "unknown_dets_NL": 137,
+            "unknown_frames_NL": 44,
+            "total_dets": 471,
+            "loc_err_median": 0.9,
+            "loc_err_p90": 4.3
+          },
+          "50": {
+            "conf": 0.05,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.895,
+            "recall_frames": 68,
+            "precision_adjudicable": 0.489,
+            "precision_legacy_exp2": 0.144,
+            "tp_dets": 68,
+            "fp_V_dets": 64,
+            "fp_absent_dets": 7,
+            "adjudicable_dets": 139,
+            "unknown_dets_NL": 137,
+            "unknown_frames_NL": 44,
+            "total_dets": 471,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 25.3
+          },
+          "100": {
+            "conf": 0.05,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.947,
+            "recall_frames": 72,
+            "precision_adjudicable": 0.637,
+            "precision_legacy_exp2": 0.153,
+            "tp_dets": 72,
+            "fp_V_dets": 34,
+            "fp_absent_dets": 7,
+            "adjudicable_dets": 113,
+            "unknown_dets_NL": 137,
+            "unknown_frames_NL": 44,
+            "total_dets": 471,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 5,
+              "recall": 0.25
+            },
+            "50": {
+              "n": 20,
+              "hits": 12,
+              "recall": 0.6
+            },
+            "100": {
+              "n": 20,
+              "hits": 16,
+              "recall": 0.8
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 7,
+              "recall": 0.318
+            },
+            "50": {
+              "n": 22,
+              "hits": 14,
+              "recall": 0.636
+            },
+            "100": {
+              "n": 22,
+              "hits": 18,
+              "recall": 0.818
+            }
+          }
+        },
+        "0.1": {
+          "25": {
+            "conf": 0.1,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.803,
+            "recall_frames": 61,
+            "precision_adjudicable": 0.517,
+            "precision_legacy_exp2": 0.198,
+            "tp_dets": 61,
+            "fp_V_dets": 54,
+            "fp_absent_dets": 3,
+            "adjudicable_dets": 118,
+            "unknown_dets_NL": 71,
+            "unknown_frames_NL": 35,
+            "total_dets": 308,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 4.3
+          },
+          "50": {
+            "conf": 0.1,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.882,
+            "recall_frames": 67,
+            "precision_adjudicable": 0.626,
+            "precision_legacy_exp2": 0.218,
+            "tp_dets": 67,
+            "fp_V_dets": 37,
+            "fp_absent_dets": 3,
+            "adjudicable_dets": 107,
+            "unknown_dets_NL": 71,
+            "unknown_frames_NL": 35,
+            "total_dets": 308,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.1,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.934,
+            "recall_frames": 71,
+            "precision_adjudicable": 0.763,
+            "precision_legacy_exp2": 0.231,
+            "tp_dets": 71,
+            "fp_V_dets": 19,
+            "fp_absent_dets": 3,
+            "adjudicable_dets": 93,
+            "unknown_dets_NL": 71,
+            "unknown_frames_NL": 35,
+            "total_dets": 308,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 5,
+              "recall": 0.25
+            },
+            "50": {
+              "n": 20,
+              "hits": 11,
+              "recall": 0.55
+            },
+            "100": {
+              "n": 20,
+              "hits": 15,
+              "recall": 0.75
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 7,
+              "recall": 0.318
+            },
+            "50": {
+              "n": 22,
+              "hits": 13,
+              "recall": 0.591
+            },
+            "100": {
+              "n": 22,
+              "hits": 17,
+              "recall": 0.773
+            }
+          }
+        },
+        "0.25": {
+          "25": {
+            "conf": 0.25,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.803,
+            "recall_frames": 61,
+            "precision_adjudicable": 0.587,
+            "precision_legacy_exp2": 0.252,
+            "tp_dets": 61,
+            "fp_V_dets": 41,
+            "fp_absent_dets": 2,
+            "adjudicable_dets": 104,
+            "unknown_dets_NL": 29,
+            "unknown_frames_NL": 19,
+            "total_dets": 242,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 4.3
+          },
+          "50": {
+            "conf": 0.25,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.882,
+            "recall_frames": 67,
+            "precision_adjudicable": 0.713,
+            "precision_legacy_exp2": 0.277,
+            "tp_dets": 67,
+            "fp_V_dets": 25,
+            "fp_absent_dets": 2,
+            "adjudicable_dets": 94,
+            "unknown_dets_NL": 29,
+            "unknown_frames_NL": 19,
+            "total_dets": 242,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.25,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.934,
+            "recall_frames": 71,
+            "precision_adjudicable": 0.877,
+            "precision_legacy_exp2": 0.293,
+            "tp_dets": 71,
+            "fp_V_dets": 8,
+            "fp_absent_dets": 2,
+            "adjudicable_dets": 81,
+            "unknown_dets_NL": 29,
+            "unknown_frames_NL": 19,
+            "total_dets": 242,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 40.3
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 5,
+              "recall": 0.25
+            },
+            "50": {
+              "n": 20,
+              "hits": 11,
+              "recall": 0.55
+            },
+            "100": {
+              "n": 20,
+              "hits": 15,
+              "recall": 0.75
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 7,
+              "recall": 0.318
+            },
+            "50": {
+              "n": 22,
+              "hits": 13,
+              "recall": 0.591
+            },
+            "100": {
+              "n": 22,
+              "hits": 17,
+              "recall": 0.773
+            }
+          }
+        },
+        "0.4": {
+          "25": {
+            "conf": 0.4,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.789,
+            "recall_frames": 60,
+            "precision_adjudicable": 0.667,
+            "precision_legacy_exp2": 0.296,
+            "tp_dets": 60,
+            "fp_V_dets": 30,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 90,
+            "unknown_dets_NL": 8,
+            "unknown_frames_NL": 7,
+            "total_dets": 203,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 5.1
+          },
+          "50": {
+            "conf": 0.4,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.855,
+            "recall_frames": 65,
+            "precision_adjudicable": 0.783,
+            "precision_legacy_exp2": 0.32,
+            "tp_dets": 65,
+            "fp_V_dets": 18,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 83,
+            "unknown_dets_NL": 8,
+            "unknown_frames_NL": 7,
+            "total_dets": 203,
+            "loc_err_median": 1.0,
+            "loc_err_p90": 12.8
+          },
+          "100": {
+            "conf": 0.4,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.921,
+            "recall_frames": 70,
+            "precision_adjudicable": 0.959,
+            "precision_legacy_exp2": 0.345,
+            "tp_dets": 70,
+            "fp_V_dets": 3,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 73,
+            "unknown_dets_NL": 8,
+            "unknown_frames_NL": 7,
+            "total_dets": 203,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 43.4
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 4,
+              "recall": 0.2
+            },
+            "50": {
+              "n": 20,
+              "hits": 9,
+              "recall": 0.45
+            },
+            "100": {
+              "n": 20,
+              "hits": 14,
+              "recall": 0.7
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 6,
+              "recall": 0.273
+            },
+            "50": {
+              "n": 22,
+              "hits": 11,
+              "recall": 0.5
+            },
+            "100": {
+              "n": 22,
+              "hits": 16,
+              "recall": 0.727
+            }
+          }
+        },
+        "0.6": {
+          "25": {
+            "conf": 0.6,
+            "tol": 25,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.539,
+            "recall_frames": 41,
+            "precision_adjudicable": 0.837,
+            "precision_legacy_exp2": 0.363,
+            "tp_dets": 41,
+            "fp_V_dets": 8,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 49,
+            "unknown_dets_NL": 1,
+            "unknown_frames_NL": 1,
+            "total_dets": 113,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 11.1
+          },
+          "50": {
+            "conf": 0.6,
+            "tol": 50,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.566,
+            "recall_frames": 43,
+            "precision_adjudicable": 0.915,
+            "precision_legacy_exp2": 0.381,
+            "tp_dets": 43,
+            "fp_V_dets": 4,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 47,
+            "unknown_dets_NL": 1,
+            "unknown_frames_NL": 1,
+            "total_dets": 113,
+            "loc_err_median": 1.1,
+            "loc_err_p90": 16.2
+          },
+          "100": {
+            "conf": 0.6,
+            "tol": 100,
+            "n_ref_V": 76,
+            "n_absent": 5,
+            "n_unlocatable": 57,
+            "recall": 0.618,
+            "recall_frames": 47,
+            "precision_adjudicable": 1.0,
+            "precision_legacy_exp2": 0.416,
+            "tp_dets": 47,
+            "fp_V_dets": 0,
+            "fp_absent_dets": 0,
+            "adjudicable_dets": 47,
+            "unknown_dets_NL": 1,
+            "unknown_frames_NL": 1,
+            "total_dets": 113,
+            "loc_err_median": 1.2,
+            "loc_err_p90": 40.7
+          },
+          "subset_independent": {
+            "25": {
+              "n": 20,
+              "hits": 1,
+              "recall": 0.05
+            },
+            "50": {
+              "n": 20,
+              "hits": 2,
+              "recall": 0.1
+            },
+            "100": {
+              "n": 20,
+              "hits": 4,
+              "recall": 0.2
+            }
+          },
+          "subset_independent_ext": {
+            "25": {
+              "n": 22,
+              "hits": 2,
+              "recall": 0.091
+            },
+            "50": {
+              "n": 22,
+              "hits": 3,
+              "recall": 0.136
+            },
+            "100": {
+              "n": 22,
+              "hits": 5,
+              "recall": 0.227
+            }
+          }
+        }
+      }
+    }
+  },
+  "subset_independent": [
+    {
+      "t_abs": [
+        10.2,
+        11.0,
+        11.4,
+        54.0,
+        54.2,
+        56.0,
+        78.2,
+        78.4,
+        78.6,
+        79.4,
+        81.2,
+        81.4,
+        81.6,
+        82.4,
+        83.6,
+        84.8,
+        96.8,
+        97.2,
+        99.6,
+        100.6
+      ],
+      "n": 20,
+      "note": "subconjunto util de casos dificiles, NO muestra sin sesgo (correccion del usuario 2026-11-07)"
+    }
+  ],
+  "subset_independent_ext": {
+    "t_abs": [
+      10.2,
+      11.0,
+      11.4,
+      54.0,
+      54.2,
+      56.0,
+      78.2,
+      78.4,
+      78.6,
+      79.4,
+      79.6,
+      81.2,
+      81.4,
+      81.6,
+      82.4,
+      83.6,
+      84.8,
+      96.4,
+      96.8,
+      97.2,
+      99.6,
+      100.6
+    ],
+    "n": 22,
+    "note": "subset de 20 + V nuevos exp3 (79.6, 96.4)"
+  }
+}

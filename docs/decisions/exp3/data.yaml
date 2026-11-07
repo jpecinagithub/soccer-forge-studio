@@ -1,0 +1,23 @@
+# H250 — data.yaml (PLANTILLA)
+
+# Plantilla para la receta del experimento 3 (finetune-recipe.md).
+# El script scripts/exp3-prepare-h250.py escribe la versión EFECTIVA con la
+# ruta real de extracción y los conteos verificados. Esta plantilla NO debe
+# usarse tal cual para entrenar: la ruta <H250_ROOT> es un marcador.
+#
+# Clases (publicadas, arXiv:2311.06892 §II.A.4):
+#   0 = ball, 1 = person (las 7 clases humanas de SoccerNet-v3 consolidadas)
+# Particiones publicadas (Zenodo 10.5281/zenodo.7808511):
+#   train 14.368 / val 2.726 / test 2.692 imágenes
+# Licencia/condiciones: ver docs/decisions/exp3/conditions-verification.md
+# (datos solo para investigación, no comercial; pesos resultantes AGPL-3.0).
+
+path: <H250_ROOT>  # p. ej. data/h250 — sustituir por la ruta real de extracción
+train: images/train
+val: images/val
+test: images/test
+
+nc: 2
+names:
+  0: ball
+  1: person

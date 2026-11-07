@@ -1,0 +1,23 @@
+clip,t_abs,category,object,x,y,detector,conf,how_verified,source
+b3,84.4,botas,pie con media blanca y bota roja de ESP 8 junto a la linea de gol,212,530,cand1,0.272,crop 480x480 2x con cruz en la deteccion (exp3),exp2 FP 3x / exp3 crop
+b3,84.6,botas,pie con media blanca y bota roja de ESP 8 junto a la linea de gol,174,522,cand1,0.27,crop 480x480 2x con cruz en la deteccion (exp3),exp2 FP 3x / exp3 crop
+b3,99.6,botas,media verde del portero (BUL 21) tendido en el suelo,1450,691,yolo,0.792,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,100.2,botas,media verde del portero (BUL 21) tendido en el suelo,1645,698,yolo,0.375,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,14.4,botas,pierna y bota blanca del portero en estirada junto al palo,1177,579,yolo,0.107,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b1,200.4,red,esquina exterior inferior de la red; mota blanca en hierba junto a la red (balon real a ~350 px),1435,666,yolo,0.271,crop 480x480 2x con cruz en la deteccion (exp3); track 3 de 1C,exp2 FP 3x / exp3 crop
+b1,200.6,red,esquina exterior inferior de la red; mota blanca en hierba junto a la red,1450,669,yolo,0.386,crop 480x480 2x con cruz en la deteccion (exp3); track 3 de 1C,exp2 FP 3x / exp3 crop
+b1,201.4,red,esquina exterior inferior de la red; mota blanca en hierba junto a la red,1500,676,yolo,0.328,crop 480x480 2x con cruz en la deteccion (exp3); track 3 de 1C,exp2 FP 3x / exp3 crop
+b3,55.0,publicidad/vallas,elemento blanco del panel Halcon sobre la valla LED,1472,327,yolo,0.074,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,56.2,publicidad/vallas,mayordomo con chaleco amarillo tras la valla LED,1354,293,yolo,0.224,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,78.4,publicidad/vallas,valla oscura (panel negro bajo la valla roja),1336,220,yolo,0.158,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,79.6,publicidad/vallas,borde rojo/blanco de la valla F50,1787,231,yolo,0.273,crop 480x480 2x con cruz en la deteccion (exp3); candidato a error exp2 §5.3,exp2 FP 3x / exp3 crop
+b3,57.2,tambor de grada,tambor blanco redondo en la grada,516,246,yolo,0.064,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,57.8,tambor de grada,tambor blanco redondo en la grada (mismo tambor que 57.2),515,200,yolo,0.091,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,83.6,tambor de grada,tambor blanco redondo en la grada tras la porteria,440,260,yolo,0.142,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,54.4,logos,checkmark blanco del logo Halcon viajes en la valla LED,906,429,yolo,0.074,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,55.4,logos,checkmark blanco del logo Halcon viajes en la valla LED,1748,320,yolo,0.058,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,55.8,logos,checkmark blanco del logo Halcon viajes en la valla LED,742,427,yolo,0.116,crop 480x480 2x con cruz en la deteccion (exp3); FP exp2 3x,exp2 FP 3x / exp3 crop
+b3,84.2,hierba,hierba vacia junto a la linea de gol,712,475,cand1,0.378,crop 480x480 2x con cruz en la deteccion (exp3); candidato a error exp2 §5.3,exp2 FP 3x / exp3 crop
+b3,84.4,hierba,hierba vacia junto a la linea de gol,748,443,cand1,0.348,crop 480x480 2x con cruz en la deteccion (exp3); candidato a error exp2 §5.3,exp2 FP 3x / exp3 crop
+b1,169.6,hierba,"hierba vacia junto a la linea de gol (guante/bota en el suelo a ~60 px, no en la cruz)",126,665,yolo,0.307,crop 480x480 2x con cruz en la deteccion (exp3); candidato a error exp2 §5.3,exp2 FP 3x / exp3 crop
+b3,96.4,camiseta,pecho/hombro de BUL 15 en primer plano,1649,294,yolo,0.386,crop 480x480 2x con cruz en la deteccion (exp3); candidato a error exp2 §5.3; FP exp2 3x,exp2 FP 3x / exp3 crop

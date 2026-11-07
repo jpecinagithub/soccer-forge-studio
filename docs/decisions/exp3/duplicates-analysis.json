@@ -1,0 +1,397 @@
+{
+  "method": "cajas casi duplicadas = >=2 detecciones (conf>=0.05) a <=50px del balon verdadero en el mismo fotograma V; cambio de id segun exp2-evaluate-linker.py sobre ref v2 (coincide con las evals guardadas: B1 28, B3 14)",
+  "clips": {
+    "b1": {
+      "cand1": {
+        "V_frames": 143,
+        "frames_ge2_on_ball": 103,
+        "frames_ge2_strong_on_ball": 82,
+        "mean_dets_on_ball_per_V": 2.85
+      },
+      "yolo": {
+        "V_frames": 143,
+        "frames_ge2_on_ball": 60,
+        "frames_ge2_strong_on_ball": 53,
+        "mean_dets_on_ball_per_V": 1.36
+      },
+      "cand1_linker": {
+        "id_changes": 28,
+        "both_ids_on_ball_same_frame": 15,
+        "both_ids_on_ball_window_pm0_2s": 26,
+        "V_frames_ge2_simultaneous_tracks_on_ball": 30,
+        "V_frames_total": 143,
+        "changes": [
+          {
+            "segment": "s1",
+            "t_abs": 71.4,
+            "old_id": 3,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 71.6,
+            "old_id": 4,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 71.8,
+            "old_id": 3,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 72.0,
+            "old_id": 4,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          },
+          {
+            "segment": "s1",
+            "t_abs": 72.8,
+            "old_id": 3,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 73.0,
+            "old_id": 4,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 73.4,
+            "old_id": 3,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 74.4,
+            "old_id": 4,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 74.6,
+            "old_id": 6,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 75.0,
+            "old_id": 4,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 75.2,
+            "old_id": 6,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 75.4,
+            "old_id": 4,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 76.0,
+            "old_id": 6,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s1",
+            "t_abs": 76.6,
+            "old_id": 4,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s2",
+            "t_abs": 135.0,
+            "old_id": 4,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          },
+          {
+            "segment": "s2",
+            "t_abs": 136.4,
+            "old_id": 8,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s2",
+            "t_abs": 137.6,
+            "old_id": 3,
+            "new_id": 8,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s2",
+            "t_abs": 138.4,
+            "old_id": 8,
+            "new_id": 3,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 165.2,
+            "old_id": 4,
+            "new_id": 5,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 166.0,
+            "old_id": 5,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 166.2,
+            "old_id": 4,
+            "new_id": 5,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 167.8,
+            "old_id": 5,
+            "new_id": 8,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 171.0,
+            "old_id": 11,
+            "new_id": 10,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s3",
+            "t_abs": 171.2,
+            "old_id": 10,
+            "new_id": 11,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s4",
+            "t_abs": 197.6,
+            "old_id": 9,
+            "new_id": 10,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s4",
+            "t_abs": 198.0,
+            "old_id": 10,
+            "new_id": 9,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s4",
+            "t_abs": 198.2,
+            "old_id": 9,
+            "new_id": 10,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "s4",
+            "t_abs": 199.4,
+            "old_id": 12,
+            "new_id": 13,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          }
+        ]
+      },
+      "yolo_linker_control": {
+        "id_changes": 2,
+        "V_frames_ge2_simultaneous_tracks_on_ball": 1,
+        "V_frames_total": 143
+      }
+    },
+    "b3": {
+      "cand1": {
+        "V_frames": 74,
+        "frames_ge2_on_ball": 62,
+        "frames_ge2_strong_on_ball": 60,
+        "mean_dets_on_ball_per_V": 3.36
+      },
+      "yolo": {
+        "V_frames": 74,
+        "frames_ge2_on_ball": 52,
+        "frames_ge2_strong_on_ball": 42,
+        "mean_dets_on_ball_per_V": 2.04
+      },
+      "cand1_linker": {
+        "id_changes": 14,
+        "both_ids_on_ball_same_frame": 6,
+        "both_ids_on_ball_window_pm0_2s": 10,
+        "V_frames_ge2_simultaneous_tracks_on_ball": 16,
+        "V_frames_total": 74,
+        "changes": [
+          {
+            "segment": "c1",
+            "t_abs": 12.0,
+            "old_id": 2,
+            "new_id": 1,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c1",
+            "t_abs": 12.6,
+            "old_id": 1,
+            "new_id": 2,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c2",
+            "t_abs": 53.8,
+            "old_id": 1,
+            "new_id": 2,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c2",
+            "t_abs": 54.0,
+            "old_id": 2,
+            "new_id": 1,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c2",
+            "t_abs": 56.0,
+            "old_id": 1,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          },
+          {
+            "segment": "c3",
+            "t_abs": 78.2,
+            "old_id": 1,
+            "new_id": 2,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 79.0,
+            "old_id": 5,
+            "new_id": 4,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 79.2,
+            "old_id": 4,
+            "new_id": 5,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 80.4,
+            "old_id": 6,
+            "new_id": 7,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          },
+          {
+            "segment": "c3",
+            "t_abs": 83.0,
+            "old_id": 9,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 83.2,
+            "old_id": 6,
+            "new_id": 9,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 83.4,
+            "old_id": 9,
+            "new_id": 6,
+            "both_ids_on_ball_same_frame": true,
+            "both_ids_on_ball_window_pm0_2s": true
+          },
+          {
+            "segment": "c3",
+            "t_abs": 84.0,
+            "old_id": 6,
+            "new_id": 9,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          },
+          {
+            "segment": "c4",
+            "t_abs": 100.6,
+            "old_id": 1,
+            "new_id": 2,
+            "both_ids_on_ball_same_frame": false,
+            "both_ids_on_ball_window_pm0_2s": false
+          }
+        ]
+      },
+      "yolo_linker_control": {
+        "id_changes": 0,
+        "V_frames_ge2_simultaneous_tracks_on_ball": 0,
+        "V_frames_total": 74
+      }
+    }
+  }
+}
