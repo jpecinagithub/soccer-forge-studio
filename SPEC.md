@@ -5,6 +5,17 @@ Fuente: propuesta completa del usuario en el side chat del 2026-11-06 (11 seccio
 ## Producto
 Análisis de vídeo de fútbol con el agente Muse de Meta (que funciona con Muse Spark 1.3) + herramientas especializadas de visión + dashboard conectado a evidencias del vídeo.
 
+> **Decisiones 2026-11-07 (corrección del usuario):**
+>
+> | Elemento | Decisión |
+> |---|---|
+> | Agente que desarrolla el proyecto | Muse de Meta |
+> | Motor que analizará los vídeos en la aplicación | Pendiente de seleccionar y validar |
+> | Uso obligatorio de Muse Spark 1.3 por API | No es un requisito |
+> | Anotaciones realizadas por Muse | Material exploratorio para desarrollar y evaluar |
+>
+> Que Muse desarrolle el proyecto no significa que Muse deba analizar los vídeos de los usuarios: esa decisión sigue abierta. El flujo del producto es: el usuario sube un vídeo y la aplicación ejecuta el análisis automáticamente, sin que tenga que entregárselo manualmente al agente Muse.
+
 Flujo: subir vídeo → comprobar archivo → analizar en segundo plano → abrir dashboard → revisar jugadas y corregir resultados → exportar. Se puede cerrar y volver más tarde; resultado completo o parcial con limitaciones explicadas.
 
 Formatos v1 propuestos: MP4, MOV, MKV, AVI, WebM (sujetos a matriz comprobada de códecs). Archivo corrupto / protegido / códec no soportado = mensaje claro, no conversión manual obligatoria.
@@ -18,11 +29,11 @@ Formatos v1 propuestos: MP4, MOV, MKV, AVI, WebM (sujetos a matriz comprobada de
 ## Papel de Muse
 Dos usos separados:
 - **Muse como herramienta de desarrollo:** construir siguiendo especificaciones, tareas y pruebas.
-- **Muse dentro del producto:** coordinar herramientas, revisar secuencias ambiguas, generar explicaciones tácticas.
-- Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Comparar Muse directo vs sistema combinado en Fase 1.
+- **Muse dentro del producto:** no. Muse es el agente de desarrollo (construir, probar, depurar). El motor que analizará los vídeos dentro de la aplicación está pendiente de selección mediante pruebas; no se exige Muse Spark ni una API concreta.
+- Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Comparar soluciones de análisis integrables en Fase 1 (ver `docs/decisions/engine-candidates-2026-11-07.md`).
 
 Pendiente de comprobar antes de integrar, en **dos bloques separados** (matización del usuario 2026-11-06):
-- **Bloque A — acceso técnico:** qué puede hacer el agente Muse con el vídeo (formatos de entrada, límites) y con qué herramientas de visión. (Corrección 2026-11-07: no es el acceso a un modelo `muse-spark-1.3` por API — ese es un modelo alojado en OpenCode con un nombre parecido, no el agente del proyecto.)
+- **Bloque A — prueba técnica automatizable:** ejecutar el recorrido real desde la aplicación: subir un clip, procesarlo con las herramientas candidatas, generar eventos estructurados y abrir su evidencia. (Replanteo 2026-11-07: ya no es el acceso a un modelo por API.)
 - **Bloque B — viabilidad:** precisión, tiempo y coste sobre nuestros vídeos.
 Tener acceso no demuestra que el análisis sea suficientemente bueno. Ver `docs/ACCEPTANCE_CRITERIA.md`.
 

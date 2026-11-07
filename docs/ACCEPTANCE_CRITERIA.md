@@ -1,16 +1,16 @@
 # Criterios de aceptación — Fase 1 (Fase 0, 2026-11-06)
 
-> **Dos bloques separados**, como exige la especificación: **A) acceso técnico** y **B) viabilidad**. Tener acceso no demuestra que el análisis sea suficientemente bueno: el bloque A puede pasar entero y el B suspender, y en ese caso la decisión es NO-GO.
+> **Dos bloques separados**, como exige la especificación: **A) prueba técnica automatizable** y **B) viabilidad**. Tener acceso no demuestra que el análisis sea suficientemente bueno: el bloque A puede pasar entero y el B suspender, y en ese caso la decisión es NO-GO.
 >
 > Todos los umbrales de este documento son **propuestos en Fase 0** y se fijan **antes** de ajustar ningún modelo. Si la primera medición queda sistemáticamente lejos de un umbral, la decisión es NO-GO o rediseño, no mover el umbral en silencio: cualquier cambio exige anotación con fecha y motivo.
 
-## A. Bloque de acceso técnico (pasa / no pasa)
+## A. Bloque de prueba técnica automatizable (pasa / no pasa)
 
-Se comprueba antes de medir viabilidad. Si un punto no pasa, no se empieza el bloque B con ese proveedor o configuración.
+El Bloque A comprueba que el recorrido completo puede ejecutarse automáticamente desde la aplicación, sin intervención manual del agente Muse: subir un clip, procesarlo con las herramientas candidatas, generar eventos estructurados y abrir su evidencia. Se comprueba por cada solución candidata antes de medir viabilidad. Si un punto no pasa, no se empieza el bloque B con esa solución.
 
 | ID | Comprobación | Cómo se verifica | Pasa si |
 |---|---|---|---|
-| A1 | Autenticación | Una llamada real con la credencial de la cuenta | Responde 200 / sin error de auth |
+| A1 | Autenticación (si la solución usa API) | Una llamada real con la credencial de la cuenta; n/a si la solución es local | Responde 200 / sin error de auth, o no necesita credencial |
 | A2 | Entrada de vídeo | Enviar un clip de 30 s en MP4 (y uno en MOV) | Ambos aceptados o rechazo con motivo claro |
 | A3 | Límites documentados | Medir y anotar: duración máxima, resolución, tamaño, peticiones/min | Límites escritos en el informe, no supuestos |
 | A4 | Comportamiento ante error | Enviar archivo corrupto y clip de 0 s | Error claro y sin cargo duplicado ni trabajo colgado |
@@ -21,7 +21,7 @@ Se comprueba antes de medir viabilidad. Si un punto no pasa, no se empieza el bl
 
 ## B. Bloque de viabilidad (medible sobre el set de evaluación)
 
-Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las anotaciones humanas como referencia. Un evento se considera acierto si coincide en tipo y participantes y `|ΔtStart| ≤ 1,0 s` (táctica) o `≤ 2,0 s` (TV / amateur).
+Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con la referencia adjudicada como referencia. Un evento se considera acierto si coincide en tipo y participantes y `|ΔtStart| ≤ 1,0 s` (táctica) o `≤ 2,0 s` (TV / amateur).
 
 ### B1. Umbrales propuestos (Fase 0)
 
@@ -30,6 +30,7 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 > 1. **Fórmula de F1 (corregida):** la versión anterior decía «aciertos / (omisiones + falsos positivos)», que no es F1. La fórmula correcta es **F1 = 2TP / (2TP + FP + FN)**, con emparejamiento uno a uno. Un evento detectado es TP solo si coincide en tipo y participantes y `|ΔtStart|` está dentro de la tolerancia; en caso contrario es FP, y cada evento anotado sin pareja es FN.
 > 2. **Tiempo analizable (redefinido para resúmenes editados):** el umbral ≥ 70 % (TV) no se aplica sobre la duración total del clip, porque en un resumen editado gran parte del tiempo son primeros planos y repeticiones. Se separan dos medidas: **cobertura de observación del clip** = tiempo `field-view` / duración total (B1 v2: 131,00 s / 237,24 s ≈ 55,2 %, se informa y no se exige); **tiempo analizable** = tiempo `field-view` procesado con éxito / tiempo `field-view` total, y el umbral ≥ 70 % se aplica a esta segunda medida. La vista de campo no acredita por sí sola la calibración geométrica: la calibración se verifica aparte, solo en tramos con geometría válida.
 > 3. **Ámbito de puntuación:** los umbrales de F1 se miden solo sobre los eventos y ventanas que la anotación marca como puntuables en su campo `scoring` (`scoredEvents`); los casos pendientes (`pendingNotScored`) no cuentan como TP, FP ni FN hasta su adjudicación. No se calcula F1 global de una clase (pases, pérdidas, recuperaciones) sobre un clip cuya anotación de esa clase es parcial.
+> 4. **Referencia (2026-11-07):** la anotación v2 de B1 es material exploratorio hecha por Muse, sin adjudicación humana. Sirve para desarrollar y para probar el procedimiento de medición, pero **no es una prueba formal de ningún motor** y **no puede usarse a la vez como predicción del sistema y como referencia para puntuarlo**. La comparación final se puntúa contra la referencia adjudicada del clip reservado.
 
 | Métrica | Cámara táctica | TV / amateur | Cómo se mide |
 |---|---|---|---|
@@ -47,10 +48,10 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 | Tiempo de proceso (CPU, sin GPU) | ≤ 3× tiempo real (p50) | ≤ 3× tiempo real (p50) | 10 min procesados en ≤ 30 min |
 | Coste por minuto | Se mide y se informa; no es criterio de corte | idem | €/min medidos. Decisión del usuario 2026-11-06: el presupuesto no es una restricción (proyecto educativo) |
 
-### B2. Comparación Muse directo vs Muse con herramientas de visión
+### B2. Comparación de soluciones de análisis integrables
 
-- **Mismo material:** los clips reservados; **misma anotación:** la referencia humana; **misma puntuación:** la tabla B1.
-- **Regla de decisión:** el sistema combinado (Muse + herramientas) debe superar a Muse directo en **F1 de pases ≥ +0,05 o error mediano de jugada ≥ −20 %**. Si no lo supera, se elige la opción más simple o se rediseña; no se construye el sistema complejo por inercia.
+- **Mismo material:** los clips reservados; **misma referencia:** la anotación adjudicada; **misma puntuación:** la tabla B1. Cada solución candidata produce sus predicciones; la referencia nunca es la salida de una de las soluciones comparadas.
+- **Regla de decisión:** gana la solución que cumple todos los umbrales de B1; si varias los cumplen, se elige la más simple y barata de operar. Si ninguna los cumple, la decisión es NO-GO o rediseño, no se construye el sistema complejo por inercia.
 - **Coste:** la comparación incluye tiempo y coste por minuto de cada opción, solo como información. El coste no bloquea la decisión (proyecto educativo, decisión del usuario 2026-11-06).
 
 ## C. Decisión
@@ -59,7 +60,7 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con las an
 |---|---|
 | A pasa entero y B cumple todos los umbrales | **GO** a Fase 2 (ingesta) con el diseño medido |
 | A pasa, B falla en 1–2 métricas no críticas (no evidencia, no correcciones, no tiempo) | **CONDICIONAL**: se documenta el fallo, se fija un plan de corrección y se repite la medición; sin repetición no hay GO |
-| A falla, o B falla en evidencia, correcciones o tiempo | **NO-GO**: no se construye el dashboard completo; se rediseña o se cambia de proveedor |
+| A falla, o B falla en evidencia, correcciones o tiempo | **NO-GO**: no se construye el dashboard completo; se rediseña o se cambia de solución |
 | B no se puede medir (sin clips, sin anotaciones) | **SIN MEDICIÓN**: no hay decisión; el paso previo es cerrar `EVALUATION_SET.md` |
 
 ## D. Registro de la decisión

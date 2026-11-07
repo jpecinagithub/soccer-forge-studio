@@ -54,6 +54,8 @@ Cinco áreas: Vídeo · Campo 2D · Jugadas · Línea temporal · Inspector. Má
 
 ## Muse (agente de Meta)
 
-Dos usos separados: Muse como herramienta de desarrollo, y Muse dentro del producto (coordinar herramientas, revisar secuencias, generar explicaciones tácticas). Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Antes de integrar: comprobar qué puede hacer el agente con el vídeo, límites de entrada y herramientas disponibles (Fase 1).
+Muse es el agente de desarrollo: construye, prueba y depura Soccer Forge Studio siguiendo las especificaciones. El motor que analizará los vídeos dentro de la aplicación está pendiente de selección (ver `docs/decisions/engine-candidates-2026-11-07.md`); no es Muse. Las herramientas especializadas aportan detecciones, trayectorias y mediciones.
 
 > Corrección 2026-11-07: el agente del proyecto es Muse de Meta, que funciona con Muse Spark 1.3. No es el modelo `muse-spark-1.3` alojado en OpenCode: ese es otro producto con un nombre parecido. El informe `docs/decisions/block-a-2026-11-07.md` documenta el estado de esa vía de OpenCode (sin acceso gratuito utilizable), pero no es la vía del proyecto.
+
+> Replanteo 2026-11-07: Muse es el agente de desarrollo elegido (construir, probar, depurar). El motor que analizará los vídeos dentro de la aplicación está **pendiente de selección** mediante pruebas; no se exige Muse Spark ni una API concreta. Ver `docs/decisions/engine-candidates-2026-11-07.md`.
