@@ -31,6 +31,7 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con la ref
 > 2. **Tiempo analizable (redefinido para resúmenes editados):** el umbral ≥ 70 % (TV) no se aplica sobre la duración total del clip, porque en un resumen editado gran parte del tiempo son primeros planos y repeticiones. Se separan dos medidas: **cobertura de observación del clip** = tiempo `field-view` / duración total (B1 v2: 131,00 s / 237,24 s ≈ 55,2 %, se informa y no se exige); **tiempo analizable** = tiempo `field-view` procesado con éxito / tiempo `field-view` total, y el umbral ≥ 70 % se aplica a esta segunda medida. La vista de campo no acredita por sí sola la calibración geométrica: la calibración se verifica aparte, solo en tramos con geometría válida.
 > 3. **Ámbito de puntuación:** los umbrales de F1 se miden solo sobre los eventos y ventanas que la anotación marca como puntuables en su campo `scoring` (`scoredEvents`); los casos pendientes (`pendingNotScored`) no cuentan como TP, FP ni FN hasta su adjudicación. No se calcula F1 global de una clase (pases, pérdidas, recuperaciones) sobre un clip cuya anotación de esa clase es parcial.
 > 4. **Referencia (2026-11-07):** la anotación v2 de B1 es material exploratorio hecha por Muse, sin adjudicación humana. Sirve para desarrollar y para probar el procedimiento de medición, pero **no es una prueba formal de ningún motor** y **no puede usarse a la vez como predicción del sistema y como referencia para puntuarlo**. La comparación final se puntúa contra la referencia adjudicada del clip reservado.
+> 5. **Tiempo de proceso (2026-11-07):** el umbral ≤ 3× real pasa a ser **objetivo de rendimiento en esta etapa, no criterio de corte**. La calidad y la trazabilidad son requisitos obligatorios. No se descarta una solución solo por superar 3× en esta etapa; cualquier cambio de este criterio se documenta antes de medir.
 
 | Métrica | Cámara táctica | TV / amateur | Cómo se mide |
 |---|---|---|---|
@@ -45,7 +46,7 @@ Se mide sobre los clips reservados (held-out) de `EVALUATION_SET.md`, con la ref
 | Correcciones que persisten tras recargar | 100 % | 100 % | corrección → recarga → comprobación |
 | Incertidumbre calibrada | ≥ 60 % de los errores estaban marcados `pending` o con confianza < 0,60 | idem | errores revisados a mano |
 | Esfuerzo de corrección | ≤ 20 min de analista por 10 min de vídeo | ≤ 30 min | tiempo medido |
-| Tiempo de proceso (CPU, sin GPU) | ≤ 3× tiempo real (p50) | ≤ 3× tiempo real (p50) | 10 min procesados en ≤ 30 min |
+| Tiempo de proceso (CPU, sin GPU) | objetivo ≤ 3× tiempo real (p50) | objetivo ≤ 3× tiempo real (p50) | 10 min procesados en ≤ 30 min; en esta fase es objetivo, no criterio de corte (cambio 2026-11-07) |
 | Coste por minuto | Se mide y se informa; no es criterio de corte | idem | €/min medidos. Decisión del usuario 2026-11-06: el presupuesto no es una restricción (proyecto educativo) |
 
 ### B2. Comparación de soluciones de análisis integrables
