@@ -3,7 +3,7 @@
 Fuente: propuesta completa del usuario en el side chat del 2026-11-06 (11 secciones). Este archivo es el resumen fiel; el texto íntegro queda en ese chat.
 
 ## Producto
-Análisis de vídeo de fútbol con agente Muse Spark 1.3 (`muse-spark-1.3`) + herramientas especializadas de visión + dashboard conectado a evidencias del vídeo.
+Análisis de vídeo de fútbol con el agente Muse de Meta (que funciona con Muse Spark 1.3) + herramientas especializadas de visión + dashboard conectado a evidencias del vídeo.
 
 Flujo: subir vídeo → comprobar archivo → analizar en segundo plano → abrir dashboard → revisar jugadas y corregir resultados → exportar. Se puede cerrar y volver más tarde; resultado completo o parcial con limitaciones explicadas.
 
@@ -18,11 +18,11 @@ Formatos v1 propuestos: MP4, MOV, MKV, AVI, WebM (sujetos a matriz comprobada de
 ## Papel de Muse
 Dos usos separados:
 - **Muse como herramienta de desarrollo:** construir siguiendo especificaciones, tareas y pruebas.
-- **Muse Spark 1.3 dentro del producto:** coordinar herramientas, revisar secuencias ambiguas, generar explicaciones tácticas.
+- **Muse dentro del producto:** coordinar herramientas, revisar secuencias ambiguas, generar explicaciones tácticas.
 - Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Comparar Muse directo vs sistema combinado en Fase 1.
 
 Pendiente de comprobar antes de integrar, en **dos bloques separados** (matización del usuario 2026-11-06):
-- **Bloque A — acceso técnico:** cuenta, límites y comportamiento de la API.
+- **Bloque A — acceso técnico:** qué puede hacer el agente Muse con el vídeo (formatos de entrada, límites) y con qué herramientas de visión. (Corrección 2026-11-07: no es el acceso a un modelo `muse-spark-1.3` por API — ese es un modelo alojado en OpenCode con un nombre parecido, no el agente del proyecto.)
 - **Bloque B — viabilidad:** precisión, tiempo y coste sobre nuestros vídeos.
 Tener acceso no demuestra que el análisis sea suficientemente bueno. Ver `docs/ACCEPTANCE_CRITERIA.md`.
 

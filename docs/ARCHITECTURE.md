@@ -52,6 +52,8 @@ Corregir un jugador o un evento actualiza las estadísticas dependientes. Todas 
 
 Cinco áreas: Vídeo · Campo 2D · Jugadas · Línea temporal · Inspector. Más resumen del partido, jugadores, métricas y exportaciones. El chat llega después de tener datos fiables y debe devolver jugadas concretas con enlaces al vídeo, o indicar falta de evidencia.
 
-## Muse Spark 1.3
+## Muse (agente de Meta)
 
-Dos usos separados: Muse como herramienta de desarrollo, y Muse Spark 1.3 dentro del producto (coordinar herramientas, revisar secuencias, generar explicaciones tácticas). Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Antes de integrar: comprobar acceso real de la cuenta, límites de vídeo, costes y comportamiento de la API (Fase 1).
+Dos usos separados: Muse como herramienta de desarrollo, y Muse dentro del producto (coordinar herramientas, revisar secuencias, generar explicaciones tácticas). Las herramientas especializadas aportan detecciones, trayectorias y mediciones. Antes de integrar: comprobar qué puede hacer el agente con el vídeo, límites de entrada y herramientas disponibles (Fase 1).
+
+> Corrección 2026-11-07: el agente del proyecto es Muse de Meta, que funciona con Muse Spark 1.3. No es el modelo `muse-spark-1.3` alojado en OpenCode: ese es otro producto con un nombre parecido. El informe `docs/decisions/block-a-2026-11-07.md` documenta el estado de esa vía de OpenCode (sin acceso gratuito utilizable), pero no es la vía del proyecto.
