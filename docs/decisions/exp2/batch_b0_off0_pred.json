@@ -1,0 +1,168 @@
+{
+ "plays": [
+  {
+   "id": "p1",
+   "tStart": 11.0,
+   "tEnd": 19.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "carry",
+     "tStart": 11.0,
+     "tEnd": 13.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "pass",
+     "tStart": 13.0,
+     "tEnd": 15.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "carry",
+     "tStart": 15.0,
+     "tEnd": 17.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "pass",
+     "tStart": 17.0,
+     "tEnd": 19.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "tStart": 19.0,
+   "tEnd": 20.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 19.0,
+     "tEnd": 20.0,
+     "players": [
+      "21"
+     ],
+     "result": "goal",
+     "uncertainty": {
+      "identity": false,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "tStart": 22.0,
+   "tEnd": 29.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "carry",
+     "tStart": 22.0,
+     "tEnd": 24.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "pass",
+     "tStart": 24.0,
+     "tEnd": 26.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "carry",
+     "tStart": 26.0,
+     "tEnd": 28.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    },
+    {
+     "type": "pass",
+     "tStart": 28.0,
+     "tEnd": 29.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 11.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 20.0,
+   "tEnd": 22.0,
+   "type": "field-view",
+   "replayOfPlayId": "p2"
+  },
+  {
+   "tStart": 29.0,
+   "tEnd": 30.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  }
+ ],
+ "notes": ""
+}

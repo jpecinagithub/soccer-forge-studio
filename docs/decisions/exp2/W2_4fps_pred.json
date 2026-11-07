@@ -1,0 +1,18 @@
+{
+ "plays": [],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 1.5,
+   "type": "replay",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 1.5,
+   "tEnd": 3.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  }
+ ],
+ "notes": "The video shows a potential penalty review situation but does not provide enough information to determine the play or events leading up to it."
+}

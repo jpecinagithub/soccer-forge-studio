@@ -1,0 +1,67 @@
+{
+ "plays": [
+  {
+   "id": "p1",
+   "tStart": 0.0,
+   "tEnd": 13.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 0.0,
+     "tEnd": 13.0,
+     "players": [],
+     "result": "goal",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "tStart": 18.0,
+   "tEnd": 30.0,
+   "team": "GEO",
+   "events": [
+    {
+     "type": "pass",
+     "tStart": 18.0,
+     "tEnd": 30.0,
+     "players": [],
+     "result": null,
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": true,
+      "time": false
+     }
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 13.0,
+   "type": "replay",
+   "replayOfPlayId": "p1"
+  },
+  {
+   "tStart": 13.0,
+   "tEnd": 18.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 18.0,
+   "tEnd": 30.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  }
+ ],
+ "notes": ""
+}

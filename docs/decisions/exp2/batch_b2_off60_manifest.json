@@ -1,0 +1,206 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "frames_dir": "/tmp/soccer-exp2/batch_b2_off60",
+ "frames": [
+  {
+   "file": "batch_b2_f01_rel0.0_abs60.0.jpg",
+   "t_rel": 0.0,
+   "t_abs": 60.0,
+   "bytes": 18915
+  },
+  {
+   "file": "batch_b2_f02_rel1.0_abs61.0.jpg",
+   "t_rel": 1.0,
+   "t_abs": 61.0,
+   "bytes": 119586
+  },
+  {
+   "file": "batch_b2_f03_rel2.0_abs62.0.jpg",
+   "t_rel": 2.0,
+   "t_abs": 62.0,
+   "bytes": 77864
+  },
+  {
+   "file": "batch_b2_f04_rel3.0_abs63.0.jpg",
+   "t_rel": 3.0,
+   "t_abs": 63.0,
+   "bytes": 76683
+  },
+  {
+   "file": "batch_b2_f05_rel4.0_abs64.0.jpg",
+   "t_rel": 4.0,
+   "t_abs": 64.0,
+   "bytes": 76508
+  },
+  {
+   "file": "batch_b2_f06_rel5.0_abs65.0.jpg",
+   "t_rel": 5.0,
+   "t_abs": 65.0,
+   "bytes": 81253
+  },
+  {
+   "file": "batch_b2_f07_rel6.0_abs66.0.jpg",
+   "t_rel": 6.0,
+   "t_abs": 66.0,
+   "bytes": 79135
+  },
+  {
+   "file": "batch_b2_f08_rel7.0_abs67.0.jpg",
+   "t_rel": 7.0,
+   "t_abs": 67.0,
+   "bytes": 73929
+  },
+  {
+   "file": "batch_b2_f09_rel8.0_abs68.0.jpg",
+   "t_rel": 8.0,
+   "t_abs": 68.0,
+   "bytes": 38077
+  },
+  {
+   "file": "batch_b2_f10_rel9.0_abs69.0.jpg",
+   "t_rel": 9.0,
+   "t_abs": 69.0,
+   "bytes": 30846
+  },
+  {
+   "file": "batch_b2_f11_rel10.0_abs70.0.jpg",
+   "t_rel": 10.0,
+   "t_abs": 70.0,
+   "bytes": 88669
+  },
+  {
+   "file": "batch_b2_f12_rel11.0_abs71.0.jpg",
+   "t_rel": 11.0,
+   "t_abs": 71.0,
+   "bytes": 85509
+  },
+  {
+   "file": "batch_b2_f13_rel12.0_abs72.0.jpg",
+   "t_rel": 12.0,
+   "t_abs": 72.0,
+   "bytes": 81321
+  },
+  {
+   "file": "batch_b2_f14_rel13.0_abs73.0.jpg",
+   "t_rel": 13.0,
+   "t_abs": 73.0,
+   "bytes": 80840
+  },
+  {
+   "file": "batch_b2_f15_rel14.0_abs74.0.jpg",
+   "t_rel": 14.0,
+   "t_abs": 74.0,
+   "bytes": 81340
+  },
+  {
+   "file": "batch_b2_f16_rel15.0_abs75.0.jpg",
+   "t_rel": 15.0,
+   "t_abs": 75.0,
+   "bytes": 69748
+  },
+  {
+   "file": "batch_b2_f17_rel16.0_abs76.0.jpg",
+   "t_rel": 16.0,
+   "t_abs": 76.0,
+   "bytes": 74015
+  },
+  {
+   "file": "batch_b2_f18_rel17.0_abs77.0.jpg",
+   "t_rel": 17.0,
+   "t_abs": 77.0,
+   "bytes": 59012
+  },
+  {
+   "file": "batch_b2_f19_rel18.0_abs78.0.jpg",
+   "t_rel": 18.0,
+   "t_abs": 78.0,
+   "bytes": 58006
+  },
+  {
+   "file": "batch_b2_f20_rel19.0_abs79.0.jpg",
+   "t_rel": 19.0,
+   "t_abs": 79.0,
+   "bytes": 75588
+  },
+  {
+   "file": "batch_b2_f21_rel20.0_abs80.0.jpg",
+   "t_rel": 20.0,
+   "t_abs": 80.0,
+   "bytes": 81161
+  },
+  {
+   "file": "batch_b2_f22_rel21.0_abs81.0.jpg",
+   "t_rel": 21.0,
+   "t_abs": 81.0,
+   "bytes": 76981
+  },
+  {
+   "file": "batch_b2_f23_rel22.0_abs82.0.jpg",
+   "t_rel": 22.0,
+   "t_abs": 82.0,
+   "bytes": 82013
+  },
+  {
+   "file": "batch_b2_f24_rel23.0_abs83.0.jpg",
+   "t_rel": 23.0,
+   "t_abs": 83.0,
+   "bytes": 87010
+  },
+  {
+   "file": "batch_b2_f25_rel24.0_abs84.0.jpg",
+   "t_rel": 24.0,
+   "t_abs": 84.0,
+   "bytes": 70730
+  },
+  {
+   "file": "batch_b2_f26_rel25.0_abs85.0.jpg",
+   "t_rel": 25.0,
+   "t_abs": 85.0,
+   "bytes": 175602
+  },
+  {
+   "file": "batch_b2_f27_rel26.0_abs86.0.jpg",
+   "t_rel": 26.0,
+   "t_abs": 86.0,
+   "bytes": 81984
+  },
+  {
+   "file": "batch_b2_f28_rel27.0_abs87.0.jpg",
+   "t_rel": 27.0,
+   "t_abs": 87.0,
+   "bytes": 20511
+  },
+  {
+   "file": "batch_b2_f29_rel28.0_abs88.0.jpg",
+   "t_rel": 28.0,
+   "t_abs": 88.0,
+   "bytes": 31597
+  },
+  {
+   "file": "batch_b2_f30_rel29.0_abs89.0.jpg",
+   "t_rel": 29.0,
+   "t_abs": 89.0,
+   "bytes": 33139
+  }
+ ],
+ "prompt_file": "/tmp/soccer-exp2/prompt_b2.txt",
+ "prompt_sha256": "b8598bd5b17c091fd96a461d6d54aace450f041170947182d0fef84ba0a8d74a",
+ "temperature": 0.0,
+ "max_tokens": 4096,
+ "http_status": 200,
+ "retries": 0,
+ "wall_seconds": 13.5,
+ "usage": {
+  "prompt_tokens": 20889,
+  "completion_tokens": 403,
+  "total_tokens": 21292
+ },
+ "cost_usd": {
+  "prompt": 0.0167,
+  "completion": 0.0004,
+  "total": 0.0171
+ },
+ "response_id": "gen-1794047882-TgNOY75sdc18cMVjCxsI",
+ "json_parse_ok": true,
+ "finish_reason": "stop"
+}

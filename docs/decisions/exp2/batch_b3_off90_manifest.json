@@ -1,0 +1,206 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "frames_dir": "/tmp/soccer-exp2/batch_b3_off90",
+ "frames": [
+  {
+   "file": "batch_b3_f01_rel0.0_abs90.0.jpg",
+   "t_rel": 0.0,
+   "t_abs": 90.0,
+   "bytes": 41774
+  },
+  {
+   "file": "batch_b3_f02_rel1.0_abs91.0.jpg",
+   "t_rel": 1.0,
+   "t_abs": 91.0,
+   "bytes": 30799
+  },
+  {
+   "file": "batch_b3_f03_rel2.0_abs92.0.jpg",
+   "t_rel": 2.0,
+   "t_abs": 92.0,
+   "bytes": 91270
+  },
+  {
+   "file": "batch_b3_f04_rel3.0_abs93.0.jpg",
+   "t_rel": 3.0,
+   "t_abs": 93.0,
+   "bytes": 103517
+  },
+  {
+   "file": "batch_b3_f05_rel4.0_abs94.0.jpg",
+   "t_rel": 4.0,
+   "t_abs": 94.0,
+   "bytes": 73308
+  },
+  {
+   "file": "batch_b3_f06_rel5.0_abs95.0.jpg",
+   "t_rel": 5.0,
+   "t_abs": 95.0,
+   "bytes": 72243
+  },
+  {
+   "file": "batch_b3_f07_rel6.0_abs96.0.jpg",
+   "t_rel": 6.0,
+   "t_abs": 96.0,
+   "bytes": 102280
+  },
+  {
+   "file": "batch_b3_f08_rel7.0_abs97.0.jpg",
+   "t_rel": 7.0,
+   "t_abs": 97.0,
+   "bytes": 78993
+  },
+  {
+   "file": "batch_b3_f09_rel8.0_abs98.0.jpg",
+   "t_rel": 8.0,
+   "t_abs": 98.0,
+   "bytes": 84329
+  },
+  {
+   "file": "batch_b3_f10_rel9.0_abs99.0.jpg",
+   "t_rel": 9.0,
+   "t_abs": 99.0,
+   "bytes": 77147
+  },
+  {
+   "file": "batch_b3_f11_rel10.0_abs100.0.jpg",
+   "t_rel": 10.0,
+   "t_abs": 100.0,
+   "bytes": 61957
+  },
+  {
+   "file": "batch_b3_f12_rel11.0_abs101.0.jpg",
+   "t_rel": 11.0,
+   "t_abs": 101.0,
+   "bytes": 76726
+  },
+  {
+   "file": "batch_b3_f13_rel12.0_abs102.0.jpg",
+   "t_rel": 12.0,
+   "t_abs": 102.0,
+   "bytes": 80936
+  },
+  {
+   "file": "batch_b3_f14_rel13.0_abs103.0.jpg",
+   "t_rel": 13.0,
+   "t_abs": 103.0,
+   "bytes": 83720
+  },
+  {
+   "file": "batch_b3_f15_rel14.0_abs104.0.jpg",
+   "t_rel": 14.0,
+   "t_abs": 104.0,
+   "bytes": 89146
+  },
+  {
+   "file": "batch_b3_f16_rel15.0_abs105.0.jpg",
+   "t_rel": 15.0,
+   "t_abs": 105.0,
+   "bytes": 90289
+  },
+  {
+   "file": "batch_b3_f17_rel16.0_abs106.0.jpg",
+   "t_rel": 16.0,
+   "t_abs": 106.0,
+   "bytes": 55971
+  },
+  {
+   "file": "batch_b3_f18_rel17.0_abs107.0.jpg",
+   "t_rel": 17.0,
+   "t_abs": 107.0,
+   "bytes": 62822
+  },
+  {
+   "file": "batch_b3_f19_rel18.0_abs108.0.jpg",
+   "t_rel": 18.0,
+   "t_abs": 108.0,
+   "bytes": 66828
+  },
+  {
+   "file": "batch_b3_f20_rel19.0_abs109.0.jpg",
+   "t_rel": 19.0,
+   "t_abs": 109.0,
+   "bytes": 16150
+  },
+  {
+   "file": "batch_b3_f21_rel20.0_abs110.0.jpg",
+   "t_rel": 20.0,
+   "t_abs": 110.0,
+   "bytes": 32984
+  },
+  {
+   "file": "batch_b3_f22_rel21.0_abs111.0.jpg",
+   "t_rel": 21.0,
+   "t_abs": 111.0,
+   "bytes": 45165
+  },
+  {
+   "file": "batch_b3_f23_rel22.0_abs112.0.jpg",
+   "t_rel": 22.0,
+   "t_abs": 112.0,
+   "bytes": 45965
+  },
+  {
+   "file": "batch_b3_f24_rel23.0_abs113.0.jpg",
+   "t_rel": 23.0,
+   "t_abs": 113.0,
+   "bytes": 94593
+  },
+  {
+   "file": "batch_b3_f25_rel24.0_abs114.0.jpg",
+   "t_rel": 24.0,
+   "t_abs": 114.0,
+   "bytes": 63290
+  },
+  {
+   "file": "batch_b3_f26_rel25.0_abs115.0.jpg",
+   "t_rel": 25.0,
+   "t_abs": 115.0,
+   "bytes": 48256
+  },
+  {
+   "file": "batch_b3_f27_rel26.0_abs116.0.jpg",
+   "t_rel": 26.0,
+   "t_abs": 116.0,
+   "bytes": 64322
+  },
+  {
+   "file": "batch_b3_f28_rel27.0_abs117.0.jpg",
+   "t_rel": 27.0,
+   "t_abs": 117.0,
+   "bytes": 88950
+  },
+  {
+   "file": "batch_b3_f29_rel28.0_abs118.0.jpg",
+   "t_rel": 28.0,
+   "t_abs": 118.0,
+   "bytes": 80763
+  },
+  {
+   "file": "batch_b3_f30_rel29.0_abs119.0.jpg",
+   "t_rel": 29.0,
+   "t_abs": 119.0,
+   "bytes": 74235
+  }
+ ],
+ "prompt_file": "/tmp/soccer-exp2/prompt_b3.txt",
+ "prompt_sha256": "27b9e262bd5af97ee2769d6e04f2c6b5f1a2260cdbf7e4116f3e1e6d7934d0dd",
+ "temperature": 0.0,
+ "max_tokens": 4096,
+ "http_status": 200,
+ "retries": 0,
+ "wall_seconds": 15.2,
+ "usage": {
+  "prompt_tokens": 20909,
+  "completion_tokens": 463,
+  "total_tokens": 21372
+ },
+ "cost_usd": {
+  "prompt": 0.0167,
+  "completion": 0.0005,
+  "total": 0.0172
+ },
+ "response_id": "gen-1794047901-mcliu6LJwAV8gT9BJfMI",
+ "json_parse_ok": true,
+ "finish_reason": "stop"
+}

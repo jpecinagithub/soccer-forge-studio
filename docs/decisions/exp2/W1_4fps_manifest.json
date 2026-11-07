@@ -1,0 +1,290 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "frames_dir": "/tmp/soccer-exp2/W1_4fps",
+ "frames": [
+  {
+   "file": "win_f01_rel0.00_abs45.00.jpg",
+   "t_rel": 0.0,
+   "t_abs": 45.0,
+   "bytes": 84146
+  },
+  {
+   "file": "win_f02_rel0.25_abs45.25.jpg",
+   "t_rel": 0.25,
+   "t_abs": 45.25,
+   "bytes": 85432
+  },
+  {
+   "file": "win_f03_rel0.50_abs45.50.jpg",
+   "t_rel": 0.5,
+   "t_abs": 45.5,
+   "bytes": 85612
+  },
+  {
+   "file": "win_f04_rel0.75_abs45.75.jpg",
+   "t_rel": 0.75,
+   "t_abs": 45.75,
+   "bytes": 86091
+  },
+  {
+   "file": "win_f05_rel1.00_abs46.00.jpg",
+   "t_rel": 1.0,
+   "t_abs": 46.0,
+   "bytes": 85084
+  },
+  {
+   "file": "win_f06_rel1.25_abs46.25.jpg",
+   "t_rel": 1.25,
+   "t_abs": 46.25,
+   "bytes": 83334
+  },
+  {
+   "file": "win_f07_rel1.50_abs46.50.jpg",
+   "t_rel": 1.5,
+   "t_abs": 46.5,
+   "bytes": 80959
+  },
+  {
+   "file": "win_f08_rel1.75_abs46.75.jpg",
+   "t_rel": 1.75,
+   "t_abs": 46.75,
+   "bytes": 82793
+  },
+  {
+   "file": "win_f09_rel2.00_abs47.00.jpg",
+   "t_rel": 2.0,
+   "t_abs": 47.0,
+   "bytes": 79183
+  },
+  {
+   "file": "win_f10_rel2.25_abs47.25.jpg",
+   "t_rel": 2.25,
+   "t_abs": 47.25,
+   "bytes": 78095
+  },
+  {
+   "file": "win_f11_rel2.50_abs47.50.jpg",
+   "t_rel": 2.5,
+   "t_abs": 47.5,
+   "bytes": 81037
+  },
+  {
+   "file": "win_f12_rel2.75_abs47.75.jpg",
+   "t_rel": 2.75,
+   "t_abs": 47.75,
+   "bytes": 80760
+  },
+  {
+   "file": "win_f13_rel3.00_abs48.00.jpg",
+   "t_rel": 3.0,
+   "t_abs": 48.0,
+   "bytes": 80913
+  },
+  {
+   "file": "win_f14_rel3.25_abs48.25.jpg",
+   "t_rel": 3.25,
+   "t_abs": 48.25,
+   "bytes": 47918
+  },
+  {
+   "file": "win_f15_rel3.50_abs48.50.jpg",
+   "t_rel": 3.5,
+   "t_abs": 48.5,
+   "bytes": 45885
+  },
+  {
+   "file": "win_f16_rel3.75_abs48.75.jpg",
+   "t_rel": 3.75,
+   "t_abs": 48.75,
+   "bytes": 46834
+  },
+  {
+   "file": "win_f17_rel4.00_abs49.00.jpg",
+   "t_rel": 4.0,
+   "t_abs": 49.0,
+   "bytes": 49649
+  },
+  {
+   "file": "win_f18_rel4.25_abs49.25.jpg",
+   "t_rel": 4.25,
+   "t_abs": 49.25,
+   "bytes": 50263
+  },
+  {
+   "file": "win_f19_rel4.50_abs49.50.jpg",
+   "t_rel": 4.5,
+   "t_abs": 49.5,
+   "bytes": 49236
+  },
+  {
+   "file": "win_f20_rel4.75_abs49.75.jpg",
+   "t_rel": 4.75,
+   "t_abs": 49.75,
+   "bytes": 49687
+  },
+  {
+   "file": "win_f21_rel5.00_abs50.00.jpg",
+   "t_rel": 5.0,
+   "t_abs": 50.0,
+   "bytes": 66860
+  },
+  {
+   "file": "win_f22_rel5.25_abs50.25.jpg",
+   "t_rel": 5.25,
+   "t_abs": 50.25,
+   "bytes": 62819
+  },
+  {
+   "file": "win_f23_rel5.50_abs50.50.jpg",
+   "t_rel": 5.5,
+   "t_abs": 50.5,
+   "bytes": 62560
+  },
+  {
+   "file": "win_f24_rel5.75_abs50.75.jpg",
+   "t_rel": 5.75,
+   "t_abs": 50.75,
+   "bytes": 64244
+  },
+  {
+   "file": "win_f25_rel6.00_abs51.00.jpg",
+   "t_rel": 6.0,
+   "t_abs": 51.0,
+   "bytes": 62347
+  },
+  {
+   "file": "win_f26_rel6.25_abs51.25.jpg",
+   "t_rel": 6.25,
+   "t_abs": 51.25,
+   "bytes": 65138
+  },
+  {
+   "file": "win_f27_rel6.50_abs51.50.jpg",
+   "t_rel": 6.5,
+   "t_abs": 51.5,
+   "bytes": 63847
+  },
+  {
+   "file": "win_f28_rel6.75_abs51.75.jpg",
+   "t_rel": 6.75,
+   "t_abs": 51.75,
+   "bytes": 71664
+  },
+  {
+   "file": "win_f29_rel7.00_abs52.00.jpg",
+   "t_rel": 7.0,
+   "t_abs": 52.0,
+   "bytes": 71814
+  },
+  {
+   "file": "win_f30_rel7.25_abs52.25.jpg",
+   "t_rel": 7.25,
+   "t_abs": 52.25,
+   "bytes": 68017
+  },
+  {
+   "file": "win_f31_rel7.50_abs52.50.jpg",
+   "t_rel": 7.5,
+   "t_abs": 52.5,
+   "bytes": 73819
+  },
+  {
+   "file": "win_f32_rel7.75_abs52.75.jpg",
+   "t_rel": 7.75,
+   "t_abs": 52.75,
+   "bytes": 72661
+  },
+  {
+   "file": "win_f33_rel8.00_abs53.00.jpg",
+   "t_rel": 8.0,
+   "t_abs": 53.0,
+   "bytes": 72456
+  },
+  {
+   "file": "win_f34_rel8.25_abs53.25.jpg",
+   "t_rel": 8.25,
+   "t_abs": 53.25,
+   "bytes": 73087
+  },
+  {
+   "file": "win_f35_rel8.50_abs53.50.jpg",
+   "t_rel": 8.5,
+   "t_abs": 53.5,
+   "bytes": 70366
+  },
+  {
+   "file": "win_f36_rel8.75_abs53.75.jpg",
+   "t_rel": 8.75,
+   "t_abs": 53.75,
+   "bytes": 71453
+  },
+  {
+   "file": "win_f37_rel9.00_abs54.00.jpg",
+   "t_rel": 9.0,
+   "t_abs": 54.0,
+   "bytes": 70457
+  },
+  {
+   "file": "win_f38_rel9.25_abs54.25.jpg",
+   "t_rel": 9.25,
+   "t_abs": 54.25,
+   "bytes": 70568
+  },
+  {
+   "file": "win_f39_rel9.50_abs54.50.jpg",
+   "t_rel": 9.5,
+   "t_abs": 54.5,
+   "bytes": 71489
+  },
+  {
+   "file": "win_f40_rel9.75_abs54.75.jpg",
+   "t_rel": 9.75,
+   "t_abs": 54.75,
+   "bytes": 70767
+  },
+  {
+   "file": "win_f41_rel10.00_abs55.00.jpg",
+   "t_rel": 10.0,
+   "t_abs": 55.0,
+   "bytes": 71600
+  },
+  {
+   "file": "win_f42_rel10.25_abs55.25.jpg",
+   "t_rel": 10.25,
+   "t_abs": 55.25,
+   "bytes": 70373
+  },
+  {
+   "file": "win_f43_rel10.50_abs55.50.jpg",
+   "t_rel": 10.5,
+   "t_abs": 55.5,
+   "bytes": 73426
+  },
+  {
+   "file": "win_f44_rel10.75_abs55.75.jpg",
+   "t_rel": 10.75,
+   "t_abs": 55.75,
+   "bytes": 72500
+  }
+ ],
+ "prompt_file": "/tmp/soccer-exp2/prompt_W1.txt",
+ "prompt_sha256": "25809693bef38083494f9dc1b9ea7e51cd594025beee9cff4ddefa9709484185",
+ "temperature": 0.0,
+ "max_tokens": 4096,
+ "http_status": 200,
+ "retries": 0,
+ "wall_seconds": 12.2,
+ "usage": {
+  "prompt_tokens": 30365,
+  "completion_tokens": 207,
+  "total_tokens": 30572
+ },
+ "cost_usd": {
+  "prompt": 0.0243,
+  "completion": 0.0002,
+  "total": 0.0245
+ },
+ "response_id": "gen-1794047714-WNXGq1tr2O1x63NxE2Av",
+ "json_parse_ok": true,
+ "finish_reason": "stop"
+}

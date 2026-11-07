@@ -1,0 +1,38 @@
+Analiza este fragmento de vídeo de fútbol (27.24 segundos, fotogramas de 960×540 extraídos de una retransmisión de TV).
+
+El fragmento empieza en el segundo 210.00 del vídeo original. Todos los tiempos que des deben ser RELATIVOS al fragmento (de 0.00 a 27.24).
+
+Devuelve SOLO un objeto JSON válido, sin markdown y sin texto fuera del JSON, con esta forma:
+
+{
+  "plays": [
+    {
+      "id": "p1",
+      "tStart": 0.0,
+      "tEnd": 0.0,
+      "team": "ESP",
+      "events": [
+        {
+          "type": "shot",
+          "tStart": 0.0,
+          "tEnd": 0.0,
+          "players": ["21"],
+          "result": "goal",
+          "uncertainty": {"identity": false, "action": false, "result": false, "time": false}
+        }
+      ]
+    }
+  ],
+  "segments": [
+    {"tStart": 0.0, "tEnd": 0.0, "type": "field-view", "replayOfPlayId": null}
+  ],
+  "notes": ""
+}
+
+Reglas:
+- "team" es "ESP" o "GEO", o null si no se puede determinar. "type" es uno de: pass, carry, recovery, loss, shot. "result" es uno de: completed, incomplete, goal, saved, blocked, out, won, lost, o null si no se puede determinar.
+- Si no puedes identificar a un jugador, usa "players": [] y marca "uncertainty.identity": true. Nunca inventes dorsales ni nombres.
+- Una repetición televisiva NO es una jugada nueva: clasifícala como segmento de tipo "replay" y vincúlala a la jugada original con "replayOfPlayId".
+- Si no puedes determinar el resultado de una acción, usa "result": null y "uncertainty.result": true.
+- Los segmentos deben cubrir los 27.24 segundos completos, sin huecos ni solapamientos.
+- Una jugada ("play") es una secuencia de acciones relacionadas en juego abierto; los primeros planos de celebración no son jugadas nuevas.

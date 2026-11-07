@@ -1,0 +1,89 @@
+{
+ "plays": [
+  {
+   "id": "p1",
+   "tStart": 0.0,
+   "tEnd": 7.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 0.0,
+     "tEnd": 3.0,
+     "players": [
+      "18"
+     ],
+     "result": "goal",
+     "uncertainty": {
+      "identity": false,
+      "action": false,
+      "result": false
+     }
+    },
+    {
+     "type": "shot",
+     "tStart": 4.0,
+     "tEnd": 7.0,
+     "players": [
+      "8"
+     ],
+     "result": "goal",
+     "uncertainty": {
+      "identity": false,
+      "action": false,
+      "result": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "tStart": 20.0,
+   "tEnd": 29.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 20.0,
+     "tEnd": 23.0,
+     "players": [
+      "7"
+     ],
+     "result": "goal",
+     "uncertainty": {
+      "identity": false,
+      "action": false,
+      "result": false
+     }
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 7.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 7.0,
+   "tEnd": 20.0,
+   "type": "replay",
+   "replayOfPlayId": "p1"
+  },
+  {
+   "tStart": 20.0,
+   "tEnd": 29.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 29.0,
+   "tEnd": 30.0,
+   "type": "replay",
+   "replayOfPlayId": "p2"
+  }
+ ],
+ "notes": ""
+}

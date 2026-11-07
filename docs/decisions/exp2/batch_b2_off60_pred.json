@@ -1,0 +1,73 @@
+{
+ "plays": [
+  {
+   "id": "p1",
+   "tStart": 0.0,
+   "tEnd": 8.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 0.0,
+     "tEnd": 8.0,
+     "players": [],
+     "result": "goal",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "tStart": 10.0,
+   "tEnd": 24.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "pass",
+     "tStart": 10.0,
+     "tEnd": 24.0,
+     "players": [],
+     "result": "completed",
+     "uncertainty": {
+      "identity": true,
+      "action": false,
+      "result": false,
+      "time": false
+     }
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 8.0,
+   "type": "replay",
+   "replayOfPlayId": "p1"
+  },
+  {
+   "tStart": 8.0,
+   "tEnd": 10.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 10.0,
+   "tEnd": 24.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 24.0,
+   "tEnd": 30.0,
+   "type": "replay",
+   "replayOfPlayId": "p2"
+  }
+ ],
+ "notes": ""
+}

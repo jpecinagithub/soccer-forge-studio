@@ -1,0 +1,206 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "frames_dir": "/tmp/soccer-exp2/batch_b6_off180",
+ "frames": [
+  {
+   "file": "batch_b6_f01_rel0.0_abs180.0.jpg",
+   "t_rel": 0.0,
+   "t_abs": 180.0,
+   "bytes": 74193
+  },
+  {
+   "file": "batch_b6_f02_rel1.0_abs181.0.jpg",
+   "t_rel": 1.0,
+   "t_abs": 181.0,
+   "bytes": 73266
+  },
+  {
+   "file": "batch_b6_f03_rel2.0_abs182.0.jpg",
+   "t_rel": 2.0,
+   "t_abs": 182.0,
+   "bytes": 69109
+  },
+  {
+   "file": "batch_b6_f04_rel3.0_abs183.0.jpg",
+   "t_rel": 3.0,
+   "t_abs": 183.0,
+   "bytes": 71837
+  },
+  {
+   "file": "batch_b6_f05_rel4.0_abs184.0.jpg",
+   "t_rel": 4.0,
+   "t_abs": 184.0,
+   "bytes": 57406
+  },
+  {
+   "file": "batch_b6_f06_rel5.0_abs185.0.jpg",
+   "t_rel": 5.0,
+   "t_abs": 185.0,
+   "bytes": 72805
+  },
+  {
+   "file": "batch_b6_f07_rel6.0_abs186.0.jpg",
+   "t_rel": 6.0,
+   "t_abs": 186.0,
+   "bytes": 70694
+  },
+  {
+   "file": "batch_b6_f08_rel7.0_abs187.0.jpg",
+   "t_rel": 7.0,
+   "t_abs": 187.0,
+   "bytes": 74515
+  },
+  {
+   "file": "batch_b6_f09_rel8.0_abs188.0.jpg",
+   "t_rel": 8.0,
+   "t_abs": 188.0,
+   "bytes": 76938
+  },
+  {
+   "file": "batch_b6_f10_rel9.0_abs189.0.jpg",
+   "t_rel": 9.0,
+   "t_abs": 189.0,
+   "bytes": 80113
+  },
+  {
+   "file": "batch_b6_f11_rel10.0_abs190.0.jpg",
+   "t_rel": 10.0,
+   "t_abs": 190.0,
+   "bytes": 70641
+  },
+  {
+   "file": "batch_b6_f12_rel11.0_abs191.0.jpg",
+   "t_rel": 11.0,
+   "t_abs": 191.0,
+   "bytes": 78938
+  },
+  {
+   "file": "batch_b6_f13_rel12.0_abs192.0.jpg",
+   "t_rel": 12.0,
+   "t_abs": 192.0,
+   "bytes": 83583
+  },
+  {
+   "file": "batch_b6_f14_rel13.0_abs193.0.jpg",
+   "t_rel": 13.0,
+   "t_abs": 193.0,
+   "bytes": 102725
+  },
+  {
+   "file": "batch_b6_f15_rel14.0_abs194.0.jpg",
+   "t_rel": 14.0,
+   "t_abs": 194.0,
+   "bytes": 63723
+  },
+  {
+   "file": "batch_b6_f16_rel15.0_abs195.0.jpg",
+   "t_rel": 15.0,
+   "t_abs": 195.0,
+   "bytes": 65038
+  },
+  {
+   "file": "batch_b6_f17_rel16.0_abs196.0.jpg",
+   "t_rel": 16.0,
+   "t_abs": 196.0,
+   "bytes": 70760
+  },
+  {
+   "file": "batch_b6_f18_rel17.0_abs197.0.jpg",
+   "t_rel": 17.0,
+   "t_abs": 197.0,
+   "bytes": 63981
+  },
+  {
+   "file": "batch_b6_f19_rel18.0_abs198.0.jpg",
+   "t_rel": 18.0,
+   "t_abs": 198.0,
+   "bytes": 68155
+  },
+  {
+   "file": "batch_b6_f20_rel19.0_abs199.0.jpg",
+   "t_rel": 19.0,
+   "t_abs": 199.0,
+   "bytes": 75086
+  },
+  {
+   "file": "batch_b6_f21_rel20.0_abs200.0.jpg",
+   "t_rel": 20.0,
+   "t_abs": 200.0,
+   "bytes": 72635
+  },
+  {
+   "file": "batch_b6_f22_rel21.0_abs201.0.jpg",
+   "t_rel": 21.0,
+   "t_abs": 201.0,
+   "bytes": 75939
+  },
+  {
+   "file": "batch_b6_f23_rel22.0_abs202.0.jpg",
+   "t_rel": 22.0,
+   "t_abs": 202.0,
+   "bytes": 74352
+  },
+  {
+   "file": "batch_b6_f24_rel23.0_abs203.0.jpg",
+   "t_rel": 23.0,
+   "t_abs": 203.0,
+   "bytes": 70373
+  },
+  {
+   "file": "batch_b6_f25_rel24.0_abs204.0.jpg",
+   "t_rel": 24.0,
+   "t_abs": 204.0,
+   "bytes": 64483
+  },
+  {
+   "file": "batch_b6_f26_rel25.0_abs205.0.jpg",
+   "t_rel": 25.0,
+   "t_abs": 205.0,
+   "bytes": 73433
+  },
+  {
+   "file": "batch_b6_f27_rel26.0_abs206.0.jpg",
+   "t_rel": 26.0,
+   "t_abs": 206.0,
+   "bytes": 76681
+  },
+  {
+   "file": "batch_b6_f28_rel27.0_abs207.0.jpg",
+   "t_rel": 27.0,
+   "t_abs": 207.0,
+   "bytes": 69219
+  },
+  {
+   "file": "batch_b6_f29_rel28.0_abs208.0.jpg",
+   "t_rel": 28.0,
+   "t_abs": 208.0,
+   "bytes": 61183
+  },
+  {
+   "file": "batch_b6_f30_rel29.0_abs209.0.jpg",
+   "t_rel": 29.0,
+   "t_abs": 209.0,
+   "bytes": 87353
+  }
+ ],
+ "prompt_file": "/tmp/soccer-exp2/prompt_b6.txt",
+ "prompt_sha256": "cee0956d987e0d8a0d12b22abfb1f96fc4483ca874fc6ae9cd3bffd9d4ee9db0",
+ "temperature": 0.0,
+ "max_tokens": 4096,
+ "http_status": 200,
+ "retries": 0,
+ "wall_seconds": 13.3,
+ "usage": {
+  "prompt_tokens": 20920,
+  "completion_tokens": 365,
+  "total_tokens": 21285
+ },
+ "cost_usd": {
+  "prompt": 0.0167,
+  "completion": 0.0004,
+  "total": 0.0171
+ },
+ "response_id": "gen-1794047964-DV38PQLqm2bervHsep0Q",
+ "json_parse_ok": true,
+ "finish_reason": "stop"
+}

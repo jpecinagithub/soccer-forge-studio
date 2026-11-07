@@ -1,0 +1,41 @@
+{
+ "plays": [
+  {
+   "id": "p1",
+   "tStart": 0.0,
+   "tEnd": 3.0,
+   "team": "ESP",
+   "events": [
+    {
+     "type": "shot",
+     "tStart": 0.0,
+     "tEnd": 3.0,
+     "players": [
+      "21"
+     ],
+     "result": "goal",
+     "uncertainty": {
+      "identity": false,
+      "action": false,
+      "result": false
+     }
+    }
+   ]
+  }
+ ],
+ "segments": [
+  {
+   "tStart": 0.0,
+   "tEnd": 3.0,
+   "type": "field-view",
+   "replayOfPlayId": null
+  },
+  {
+   "tStart": 3.0,
+   "tEnd": 11.0,
+   "type": "celebration",
+   "replayOfPlayId": null
+  }
+ ],
+ "notes": ""
+}

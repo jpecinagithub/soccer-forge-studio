@@ -1,0 +1,206 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "frames_dir": "/tmp/soccer-exp2/batch_b0_off0",
+ "frames": [
+  {
+   "file": "batch_b0_f01_rel0.0_abs0.0.jpg",
+   "t_rel": 0.0,
+   "t_abs": 0.0,
+   "bytes": 63630
+  },
+  {
+   "file": "batch_b0_f02_rel1.0_abs1.0.jpg",
+   "t_rel": 1.0,
+   "t_abs": 1.0,
+   "bytes": 66169
+  },
+  {
+   "file": "batch_b0_f03_rel2.0_abs2.0.jpg",
+   "t_rel": 2.0,
+   "t_abs": 2.0,
+   "bytes": 78257
+  },
+  {
+   "file": "batch_b0_f04_rel3.0_abs3.0.jpg",
+   "t_rel": 3.0,
+   "t_abs": 3.0,
+   "bytes": 77794
+  },
+  {
+   "file": "batch_b0_f05_rel4.0_abs4.0.jpg",
+   "t_rel": 4.0,
+   "t_abs": 4.0,
+   "bytes": 76309
+  },
+  {
+   "file": "batch_b0_f06_rel5.0_abs5.0.jpg",
+   "t_rel": 5.0,
+   "t_abs": 5.0,
+   "bytes": 76385
+  },
+  {
+   "file": "batch_b0_f07_rel6.0_abs6.0.jpg",
+   "t_rel": 6.0,
+   "t_abs": 6.0,
+   "bytes": 78639
+  },
+  {
+   "file": "batch_b0_f08_rel7.0_abs7.0.jpg",
+   "t_rel": 7.0,
+   "t_abs": 7.0,
+   "bytes": 69297
+  },
+  {
+   "file": "batch_b0_f09_rel8.0_abs8.0.jpg",
+   "t_rel": 8.0,
+   "t_abs": 8.0,
+   "bytes": 63695
+  },
+  {
+   "file": "batch_b0_f10_rel9.0_abs9.0.jpg",
+   "t_rel": 9.0,
+   "t_abs": 9.0,
+   "bytes": 69792
+  },
+  {
+   "file": "batch_b0_f11_rel10.0_abs10.0.jpg",
+   "t_rel": 10.0,
+   "t_abs": 10.0,
+   "bytes": 80111
+  },
+  {
+   "file": "batch_b0_f12_rel11.0_abs11.0.jpg",
+   "t_rel": 11.0,
+   "t_abs": 11.0,
+   "bytes": 79063
+  },
+  {
+   "file": "batch_b0_f13_rel12.0_abs12.0.jpg",
+   "t_rel": 12.0,
+   "t_abs": 12.0,
+   "bytes": 73006
+  },
+  {
+   "file": "batch_b0_f14_rel13.0_abs13.0.jpg",
+   "t_rel": 13.0,
+   "t_abs": 13.0,
+   "bytes": 82477
+  },
+  {
+   "file": "batch_b0_f15_rel14.0_abs14.0.jpg",
+   "t_rel": 14.0,
+   "t_abs": 14.0,
+   "bytes": 57249
+  },
+  {
+   "file": "batch_b0_f16_rel15.0_abs15.0.jpg",
+   "t_rel": 15.0,
+   "t_abs": 15.0,
+   "bytes": 72957
+  },
+  {
+   "file": "batch_b0_f17_rel16.0_abs16.0.jpg",
+   "t_rel": 16.0,
+   "t_abs": 16.0,
+   "bytes": 66039
+  },
+  {
+   "file": "batch_b0_f18_rel17.0_abs17.0.jpg",
+   "t_rel": 17.0,
+   "t_abs": 17.0,
+   "bytes": 80206
+  },
+  {
+   "file": "batch_b0_f19_rel18.0_abs18.0.jpg",
+   "t_rel": 18.0,
+   "t_abs": 18.0,
+   "bytes": 78466
+  },
+  {
+   "file": "batch_b0_f20_rel19.0_abs19.0.jpg",
+   "t_rel": 19.0,
+   "t_abs": 19.0,
+   "bytes": 43701
+  },
+  {
+   "file": "batch_b0_f21_rel20.0_abs20.0.jpg",
+   "t_rel": 20.0,
+   "t_abs": 20.0,
+   "bytes": 51611
+  },
+  {
+   "file": "batch_b0_f22_rel21.0_abs21.0.jpg",
+   "t_rel": 21.0,
+   "t_abs": 21.0,
+   "bytes": 71142
+  },
+  {
+   "file": "batch_b0_f23_rel22.0_abs22.0.jpg",
+   "t_rel": 22.0,
+   "t_abs": 22.0,
+   "bytes": 58284
+  },
+  {
+   "file": "batch_b0_f24_rel23.0_abs23.0.jpg",
+   "t_rel": 23.0,
+   "t_abs": 23.0,
+   "bytes": 62502
+  },
+  {
+   "file": "batch_b0_f25_rel24.0_abs24.0.jpg",
+   "t_rel": 24.0,
+   "t_abs": 24.0,
+   "bytes": 68116
+  },
+  {
+   "file": "batch_b0_f26_rel25.0_abs25.0.jpg",
+   "t_rel": 25.0,
+   "t_abs": 25.0,
+   "bytes": 75165
+  },
+  {
+   "file": "batch_b0_f27_rel26.0_abs26.0.jpg",
+   "t_rel": 26.0,
+   "t_abs": 26.0,
+   "bytes": 71099
+  },
+  {
+   "file": "batch_b0_f28_rel27.0_abs27.0.jpg",
+   "t_rel": 27.0,
+   "t_abs": 27.0,
+   "bytes": 73186
+  },
+  {
+   "file": "batch_b0_f29_rel28.0_abs28.0.jpg",
+   "t_rel": 28.0,
+   "t_abs": 28.0,
+   "bytes": 68195
+  },
+  {
+   "file": "batch_b0_f30_rel29.0_abs29.0.jpg",
+   "t_rel": 29.0,
+   "t_abs": 29.0,
+   "bytes": 99457
+  }
+ ],
+ "prompt_file": "/tmp/soccer-exp2/prompt_b0.txt",
+ "prompt_sha256": "8c72bd5d28d44702f7429d267b49476fc612c1854d5824833ca441bf2e76cf52",
+ "temperature": 0.0,
+ "max_tokens": 4096,
+ "http_status": 200,
+ "retries": 0,
+ "wall_seconds": 25.6,
+ "usage": {
+  "prompt_tokens": 20878,
+  "completion_tokens": 911,
+  "total_tokens": 21789
+ },
+ "cost_usd": {
+  "prompt": 0.0167,
+  "completion": 0.0009,
+  "total": 0.0176
+ },
+ "response_id": "gen-1794047833-5cuFhBCf4bBpg8N8x4fn",
+ "json_parse_ok": true,
+ "finish_reason": "stop"
+}
