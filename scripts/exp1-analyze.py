@@ -17,6 +17,7 @@ Uso:
     python scripts/exp1-analyze.py docs/decisions/exp1/frag-35-65.json
 """
 
+import argparse
 import json
 import statistics
 import sys
@@ -32,9 +33,14 @@ def seg_type_at(segments, t):
 
 
 def main() -> int:
-    pred = json.load(open(sys.argv[1]))
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("pred", help="JSON de predicciones")
+    ap.add_argument("--t0", type=float, default=0.0, help="Inicio de ventana (t_abs)")
+    ap.add_argument("--t1", type=float, default=237.24, help="Fin de ventana (t_abs)")
+    args = ap.parse_args()
+    pred = json.load(open(args.pred))
     ann = json.load(open(ANNOTATION))
-    frames = pred["frames"]
+    frames = [f for f in pred["frames"] if args.t0 <= f["t_abs"] < args.t1]
     segments = ann["segments"]
 
     # --- Por tipo de segmento ---
@@ -48,7 +54,7 @@ def main() -> int:
         d["persons"].append(len(persons))
         if balls:
             d["ball_frames"] += 1
-    print("== Por tipo de segmento (t_abs 35-65) ==")
+    print("== Por tipo de segmento (t_abs %.2f-%.2f) ==" % (args.t0, args.t1))
     for st, d in sorted(by_type.items()):
         print(f"{st:10s} frames={d['n']:4d} personas/frame="
               f"{statistics.mean(d['persons']):5.2f} "
@@ -60,7 +66,7 @@ def main() -> int:
         for ev in play["events"]:
             if ev["id"] not in ann["scoring"]["scoredEvents"]:
                 continue
-            if not (35.0 <= ev["tStart"] < 65.0):
+            if not (args.t0 <= ev["tStart"] < args.t1):
                 continue
             for label, t in (("tStart", ev["tStart"]), ("tEnd", ev["tEnd"])):
                 near = [f for f in frames if abs(f["t_abs"] - t) <= 1.0]
@@ -81,19 +87,21 @@ def main() -> int:
             if x["cls"] == "person" and x["track_id"] is not None:
                 lengths[x["track_id"]] = lengths.get(x["track_id"], 0) + 1
     vals = sorted(lengths.values())
-    print(f"tracks distintos: {len(vals)} (en 30 s; en campo hay ~22 personas + árbitros)")
+    print(f"tracks distintos: {len(vals)} (en {args.t1 - args.t0:.0f} s; en campo hay ~22 personas + árbitros)")
     print(f"longitud media: {statistics.mean(vals):.1f} fotogramas "
           f"({statistics.mean(vals) / 25:.2f} s); mediana: {statistics.median(vals)}; "
           f"máx: {max(vals)}; de 1 fotograma: {sum(1 for v in vals if v == 1)}")
     # Cuántos tracks distintos aparecen en cada segundo (fragmentación visible)
     per_second = {}
     for f in frames:
-        sec = int(f["t_rel"])
+        sec = int(f["t_abs"])
         ids = {x["track_id"] for x in f["detections"]
                if x["cls"] == "person" and x["track_id"] is not None}
         per_second.setdefault(sec, set()).update(ids)
-    print("tracks distintos acumulados por segundo (rel):",
-          [len(per_second[s]) for s in sorted(per_second)][:30])
+    secs = sorted(per_second)
+    print("tracks distintos acumulados por segundo (t_abs):",
+          [len(per_second[s]) for s in secs][:60],
+          "..." if len(secs) > 60 else "")
 
     # --- Balón: tracks ---
     print("\n== Balón: tracks ==")
