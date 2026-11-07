@@ -3,6 +3,25 @@
 **Fecha:** 2026-11-07 · **Repo:** `soccer-forge-studio`, rama `main`
 **Estado:** COMPLETADO (candidatos, referencia, detección cruda y enlazador congelado)
 
+## Correcciones del usuario (2026-11-07, sobre este informe)
+
+- **La precisión mezcla detecciones evaluables y desconocidas.** Las
+  detecciones en fotogramas O entran en el denominador de precisión aunque
+  no se cuenten como falsos positivos. Si no sabemos dónde está el balón,
+  no podemos penalizar automáticamente esas detecciones. Separar visible,
+  ausente confirmado y no localizable; calcular precisión solo sobre casos
+  adjudicables y publicar los desconocidos aparte. (Corrección aplicable
+  sobre los resultados guardados, sin repetir inferencia.)
+- **Los 20 fotogramas de B3 no son una muestra completamente
+  independiente.** Sus coordenadas se corrigieron sin aceptar directamente
+  la propuesta de YOLO, pero parte de su selección procede precisamente de
+  fallos o ausencias de YOLO. Es un subconjunto útil de casos difíciles,
+  no una comparación sin sesgo del partido completo.
+- **Alejarse de una trayectoria interpolada no demuestra un falso
+  positivo.** La interpolación ya falló con golpeos y cambios de cámara.
+  Esos casos deben llamarse candidatos a error hasta comprobar visualmente
+  qué objeto detectan.
+
 ## 0. Veredicto
 
 **El candidato 1 (`bambezius/yolo11n-soccernet-ball`, YOLO11n afinado en SoccerNet-v3)
@@ -16,9 +35,11 @@ no de limpieza:
 | Recuperación cruda B3 (n=74 V) | 0,716 | **0,878** |
 | Recuperación B3 en V independientes de YOLO (n=20) | 0,100 | **0,550** |
 | Precisión cruda B1 / B3 | 0,281 / 0,356 | 0,296 / 0,269 |
+| | *(mezcla casos evaluables y desconocidos; pendiente de recalcular solo
+sobre casos adjudicables, ver correcciones)* | |
 | Error de localización mediano B1 | 15,4 px | 16,0 px |
 | Detecciones en fotogramas O, B3 (conf 0,25) | 8 | 35 |
-| De ellas, lejos de la trayectoria (>100 px) | 4 | 6 |
+| De ellas, lejos de la trayectoria (>100 px, candidatos a error) | 4 | 6 |
 | Velocidad (Oracle, CPU) | ~28× real | **~9–12× real** |
 
 Con el **enlazador CONGELADO de 1C (g120-c8)**:
@@ -44,11 +65,12 @@ Con el **enlazador CONGELADO de 1C (g120-c8)**:
 (§4.3). La comparación no sesgada en B3 es el subconjunto V independiente.
 
 **Consecuencias:**
-1. **El candidato 1 se adopta como línea base de detección para seguir
-   experimentando** (recupera el balón en muchos más fotogramas, con la misma
-   precisión de localización y 3× más rápido). **NO se integra como artefacto
-   del proyecto: no declara licencia** (§1.1). Uso interno de experimentación
-   solamente hasta resolverlo.
+1. **El candidato 1 se conserva como resultado comparativo ya obtenido**
+   para seguir experimentando (recupera el balón en muchos más fotogramas,
+   con la misma precisión de localización y 3× más rápido). **NO se integra
+   como artefacto del proyecto: no declara licencia** (§1.1). El "uso
+   interno" no resuelve la ausencia de condiciones explícitas de uso; sus
+   pesos no se convierten en una dependencia del proyecto.
 2. **El enlazador es ahora el cuello de botella, no el detector.** Con el
    candidato 1 el enlazador congelado sigue el balón en más fotogramas, pero
    fragmenta mucho más (28 cambios de id frente a 2 en B1) y su tasa de
@@ -356,10 +378,14 @@ la propuesta YOLO, aceptado tras verificación visual 3×**. Por tanto:
   referencia derivada de YOLO. La comparación de localización válida es la
   de B1 (referencia independiente de ambos detectores).
 - La **recuperación de YOLO en B3 está inflada** en esos 54 fotogramas (la
-  referencia ES su detección). La comparación no sesgada en B3 es el
-  subconjunto de 20 fotogramas V independientes de YOLO (3 CORRECT +
+  referencia ES su detección). La comparación en B3 es el subconjunto de
+  20 fotogramas V independientes de YOLO (3 CORRECT +
   7 resueltos desde FP + 10 interpolados): YOLO 0,100 frente a candidato 1
-  0,550 a conf 0,25 (§5).
+  0,550 a conf 0,25 (§5). **Ese subconjunto no es una muestra
+  completamente independiente:** sus coordenadas se corrigieron sin
+  aceptar directamente la propuesta de YOLO, pero parte de su selección
+  procede de fallos o ausencias de YOLO. Es un subconjunto útil de casos
+  difíciles, no una comparación sin sesgo del partido completo.
 - El enlazador YOLO en B3 hereda el mismo sesgo (§6).
 
 ## 5. Detección cruda (sin seguidor)
@@ -446,10 +472,13 @@ En B1 (solo 8 fotogramas O): a conf 0,25, YOLO 2 dets (1 lejos), candidato 1
 9 dets (0 lejos, 8 cerca de trayectoria).
 
 **Lectura honesta:** el candidato 1 NO demuestra menos confusiones en
-número absoluto — produce más detecciones en fotogramas O — pero las
-confusiones claras (lejos de la trayectoria) son **similares en número**
+número absoluto — produce más detecciones en fotogramas O — pero los
+candidatos a error lejos de la trayectoria son **similares en número**
 (6 frente a 4 a conf 0,25 en B3; 0 frente a 1 en B1), mientras recupera
-mucho más balón. La mejora es de recuperación a tasa de confusión por
+mucho más balón. Alejarse de una trayectoria interpolada **no demuestra**
+un falso positivo (la interpolación ya falló con golpeos y cambios de
+cámara): esos casos son candidatos a error hasta comprobar visualmente qué
+objeto detectan. La mejora es de recuperación a tasa de confusión por
 detección similar, no de limpieza.
 
 ## 6. Enlazador congelado de 1C (g120-c8)
@@ -621,7 +650,10 @@ python3 scripts/exp1c-linker.py --pred data/clips/work/exp2/cand1-s1-as-sportsba
   no sesgada.
 - El evaluador de detección (`exp2-evaluate.py`) no cuenta detecciones en
   fotogramas O como FP en `fp_dets` (sí entran en el denominador de
-  precisión); el conteo suplementario en O está en §5.3.
+  precisión); el conteo suplementario en O está en §5.3. **Defecto
+  conocido, pendiente de corregir:** la precisión así calculada mezcla
+  casos evaluables y desconocidos; debe calcularse solo sobre casos
+  adjudicables, con los desconocidos publicados aparte (ver correcciones).
 - La tasa de error del enlazador depende de qué fotogramas son V frente a
   O; no comparar sus valores absolutos con los de 1C (referencia distinta).
 - La referencia B1 re-verificada tiene incertidumbre 10–30 px por posición;
