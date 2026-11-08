@@ -1,5 +1,8 @@
 # Soccer Forge Studio — Especificación inicial (2026-11-06)
 
+> **Estado (2026-11-08): proyecto cerrado en su estado experimental.
+> Ver `docs/decisions/cierre-2026-11-08.md`.**
+
 Fuente: propuesta completa del usuario en el side chat del 2026-11-06 (11 secciones). Este archivo es el resumen fiel; el texto íntegro queda en ese chat.
 
 ## Producto
